@@ -1,0 +1,189 @@
+#sitemapItem {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; OVERFLOW: hidden; WIDTH: 110%; BORDER-RIGHT-WIDTH: 2px
+}
+#admin #sitemapItem {
+	WIDTH: 100%;
+}
+#admin #sitemapItem A {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 4px 5px; DISPLAY: block; PADDING-LEFT: 18px; FONT-WEIGHT: normal; FONT-SIZE: 69%; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 0px; WIDTH: 40%; COLOR: #000; TEXT-INDENT: 0px; PADDING-TOP: 2px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+
+
+#admin .rad_MC{ CLEAR: both; DISPLAY: block; PADDING-LEFT: 0px;}
+#admin .rad_doc{ CLEAR: both; DISPLAY: block; PADDING-LEFT: 0px;}
+
+#admin #sitemapItem .rad_MC A {
+	HEIGHT: 18px! important; WIDTH: 100% ! important; PADDING-RIGHT: 0px; BORDER-TOP: #eee 1px solid; BORDER-left: #eee 1px solid; BORDER-RIGHT: #eee 1px solid; BACKGROUND-POSITION: 22px 8px; DISPLAY: block; PADDING-LEFT: 36px; FONT-WEIGHT: bold; FONT-SIZE: 69%; BACKGROUND-ATTACHMENT: scroll; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 0px; COLOR: #000; TEXT-INDENT: 0px; PADDING-TOP: 6px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #efdfb8; TEXT-DECORATION: none
+}
+
+
+#sitemapItem .iconreturntohp {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 42px; FONT-WEIGHT: bold! important; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+#sitemapItem .iconsubhp {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 42px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+#sitemapItem .hp {
+	BACKGROUND-POSITION: 11px 10px; BACKGROUND-IMAGE: url(../images/link_homepage.gif); PADDING-TOP: 8px
+}
+#sitemapItem .hppend {
+	BACKGROUND-POSITION: 11px 10px; BACKGROUND-IMAGE: url(../images/homepage_unpublished.gif); PADDING-TOP: 8px
+}
+
+
+#sitemapItem .hppart {
+	BACKGROUND-POSITION: 11px 10px; BACKGROUND-IMAGE: url(../images/homepage_someunpublished.gif); PADDING-TOP: 8px
+}
+#sitemapItem .ch {
+	BACKGROUND-IMAGE: url(../images/Link_Inactive_Channel.gif)
+}
+#sitemapItem .page {
+	BACKGROUND-IMAGE: url(../images/square_orange.gif)
+}
+#sitemapItem .pagepend {
+	BACKGROUND-IMAGE: url(../images/pageunpublished.gif)
+}
+#sitemapItem .pagepart {
+	BACKGROUND-IMAGE: url(../images/pagesomeunpublisheddata.gif)
+}
+#sitemapItem .subhp {
+	BACKGROUND-IMAGE: url(../images/Link_Subhomepage.gif);
+}
+#sitemapItem .subhppart {
+	BACKGROUND-IMAGE: url(../images/link_subhomepage_someunpublished.gif)
+}
+#sitemapItem .subhppend {
+	BACKGROUND-IMAGE: url(../images/link_subhomepage_notvisible.gif)
+}
+#sitemapItem .mcclosed {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Closed_Published.GIF)
+}
+#sitemapItem .mcclosedpend {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Closed_Unpublished.GIF)
+}
+#sitemapItem .mcclosedpart {
+	BACKGROUND-IMAGE: url(../images/Link_Menucategory_closed_Someunpublished.GIF)
+}
+#sitemapItem .mcopen {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Open_Published.GIF)
+}
+#sitemapItem .mcopenpend {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Open_Unpublished.GIF)
+}
+#sitemapItem .mcopenpart {
+	BACKGROUND-IMAGE: url(../images/Link_Menucategory_Open_Someunpublished.GIF)
+}
+#sitemapItem .orgch {
+	BACKGROUND-IMAGE: url(../images/OrgChart_Published.gif)
+}
+#sitemapItem .orgchpend {
+	BACKGROUND-IMAGE: url(../images/OrgChart_Unpublished.gif)
+}
+#sitemapItem .orgchpart {
+	BACKGROUND-IMAGE: url(../images/OrgChart_Someunpublished.gif)
+}
+#sitemapItem .who {
+	BACKGROUND-IMAGE: url(../images/WhoisWho_published.gif)
+}
+#sitemapItem .whopend {
+	BACKGROUND-IMAGE: url(../images/WhoisWho_unpublished.GIF)
+}
+#sitemapItem .whopart {
+	BACKGROUND-IMAGE: url(../images/WhoisWho_Someunpublished.GIF)
+}
+#sitemapItem .docst {
+	BACKGROUND-IMAGE: url(../images/docstorepublished.gif)
+}
+#sitemapItem .docstpend {
+	BACKGROUND-IMAGE: url(../images/docstoreunpublished.gif)
+}
+#sitemapItem .docstpart {
+	BACKGROUND-IMAGE: url(../images/DocStoreSomeUnpublished.gif)
+}
+#sitemapItem .scanlink {
+	BACKGROUND-IMAGE: url(../images/Link_ScaniaLink.GIF)
+}
+#sitemapItem .extlink {
+	BACKGROUND-IMAGE: url(../images/Link_wwwLink.gif)
+}
+#sitemapItem .pagelnk {
+	BACKGROUND-IMAGE: url(../images/square_orange_lnk.gif)
+}
+#sitemapItem .pagependlnk {
+	BACKGROUND-IMAGE: url(../images/pageunpublished_lnk.gif)
+}
+#sitemapItem .pagepartlnk {
+	BACKGROUND-IMAGE: url(../images/pagesomeunpublisheddata_lnk.gif)
+}
+#sitemapItem .mcclosedlnk {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Closed_Published_lnk.GIF)
+}
+#sitemapItem .mcclosedpartlnk {
+	BACKGROUND-IMAGE: url(../images/Link_Menucategory_closed_Someunpublished_lnk.GIF)
+}
+#sitemapItem .mcclosedpendlnk {
+	BACKGROUND-IMAGE: url(../images/Link_Menucategory_closed_unpublished_lnk.GIF)
+}
+#sitemapItem .mcopenlnk {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Open_Published_lnk.gif)
+}
+#sitemapItem .mcopenpartlnk {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Open_Published_lnk.gif)
+}
+#sitemapItem .mcopenpendlnk {
+	BACKGROUND-IMAGE: url(../images/Link_MenuCategory_Open_Published_lnk.gif)
+}
+#sitemapItem .orgchlnk {
+	BACKGROUND-IMAGE: url(../images/OrgChart_Published_lnk.gif)
+}
+#sitemapItem .orgchpendlnk {
+	BACKGROUND-IMAGE: url(../images/OrgChart_Unpublished_lnk.gif)
+}
+#sitemapItem .orgchpartlnk {
+	BACKGROUND-IMAGE: url(../images/OrgChart_Someunpublished_lnk.gif)
+}
+#sitemapItem .wholnk {
+	BACKGROUND-IMAGE: url(../images/WhoisWho_published_lnk.gif)
+}
+#sitemapItem .whopendlnk {
+	BACKGROUND-IMAGE: url(../images/WhoisWho_unpublished_lnk.GIF)
+}
+#sitemapItem .whopartlnk {
+	BACKGROUND-IMAGE: url(../images/WhoisWho_Someunpublished_lnk.GIF)
+}
+#sitemapItem .docstlnk {
+	BACKGROUND-IMAGE: url(../images/docstorepublished_lnk.gif)
+}
+#sitemapItem .docstpendlnk {
+	BACKGROUND-IMAGE: url(../images/docstoreunpublished_lnk.gif)
+}
+#sitemapItem .docstpartlnk {
+	BACKGROUND-IMAGE: url(../images/DocStoreSomeUnpublished_lnk.gif)
+}
+#sitemapItem .unreg {
+	BACKGROUND-IMAGE: url(../images/linkunregistrated.gif)
+}
+#sitemapItem .internal {
+	BACKGROUND-IMAGE: url(../images/link_homepage_shortcut.gif)
+}
+#sitemapItem .hplnk {
+	BACKGROUND-IMAGE: url(../images/link_homepage_shortcut.gif)
+}
+#sitemapItem .subhplnk {
+	BACKGROUND-IMAGE: url(../images/link_subhomepage_shortcut.gif)
+}
+#sitemapItem .inlinelnk {
+	BACKGROUND-IMAGE: url(../images/square_orange_lnk.gif)
+}
+#sitemapItem .file {
+	BACKGROUND-IMAGE: url(../images/icon_file.gif)
+}
+#sitemapItem .filelnk {
+	BACKGROUND-IMAGE: url(../images/icon_file_link.gif)
+}
+#sitemapItem .filelinknotavail {
+	BACKGROUND-IMAGE: url(../images/icon_file_link_not_available.gif); COLOR: red; TEXT-DECORATION: underline
+}
+#sitemapItem .folderlinknotavail {
+	BACKGROUND-IMAGE: url(../images/icon_folder_link_not_available.gif); /* COLOR: blue; TEXT-DECORATION: underline; */ 
+}

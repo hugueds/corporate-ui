@@ -1,0 +1,136 @@
+#taptop {overflow: hidden; WIDTH: 100%; WHITE-SPACE: nowrap; POSITION: relative; margin: 0px 0px;  padding: 0px 0px; background-color:#FFF;}
+
+#taptop IMG.icon { PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; }
+#taptop .headline { float:left;  padding:8px 0px 0px 10%; }
+#taptop .exit { FONT-SIZE: 120%; BACKGROUND: url(/images/exitbutton.gif) no-repeat 0px 11px; FLOAT: right; padding: 8px 18px; }
+#taptop A.exit { COLOR: #000000; }
+
+#tabcontainer
+{
+        width: 100%;
+        padding: 10px 0px 0px 0px;
+        /* height: 46px; */
+        margin: 0px 0px;
+}
+#tabnav
+{
+        height: 20px;
+        margin: 0px 0px ! important;
+        padding: 0px 0px ! important;
+}
+
+#tabnav UL {
+	LIST-STYLE-POSITION: inside ! important; 
+	MARGIN: 0px 0px ! important;
+        padding: 0px 0px ! important;
+}
+
+#tabnav LI {
+	CLEAR: none ! important; 
+        DISPLAY:  inline ! important; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 100% ! important ; 
+	LINE-HEIGHT: 100% ! important; 
+        margin: 0 ! important; 
+        padding: 0 ! important;
+        list-style-type: none ! important;
+}
+
+#tabnav a {
+  width: 96px;
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 69%; 
+  FONT-FAMILY: Verdana, Arial, 'Helvetica 65 Medium';
+  COLOR: #000; 
+  text-decoration: none ! important;
+  text-align: center;
+}
+      
+#tabnav a:link, #tabnav a:visited
+{
+        float: left;
+        background: #fff;
+        padding: 2px 24px 2px 20px;
+        margin-right: 4px;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 2px solid #fff;
+        text-decoration: none;
+}
+
+#tabnav a:link.active, #tabnav a:visited.active
+{
+        font-weight: bold;
+        background: #d8d8d8;
+}
+
+#tabnav a:link.active:hover, #tabnav a:visited.active:hover
+{
+        text-decoration: underline ! important;
+        
+}
+
+#tabnav a:hover
+{
+        background: #d8d8d8;
+        text-decoration: none ! important;     
+        /* text-decoration: underline ! important; */
+}
+
+#subnav {
+     height: 26px;
+     margin: 0px 0px 0px 0px ! important;
+     padding: 0px 0px 0px 0px ! important;
+     width: 100%;
+     background: #d8d8d8;
+}
+
+#subnav UL {
+	DISPLAY: block; 
+	LIST-STYLE-POSITION: inside ! important; 
+	margin: 0px 0px 0px 0px ! important;
+        padding: 0px 0px 0px 0px ! important;
+        width: 100%;
+        background: #d8d8d8;
+        border-bottom: 3px solid #fff;
+}
+
+#subnav LI {
+	CLEAR: none ! important; 
+        DISPLAY:  inline ! important; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 100% ! important ; 
+	LINE-HEIGHT: 100% ! important; 
+        margin: 0px 0px 0px 0px ! important;
+        padding: 0px 0px 0px 0px ! important;
+        list-style-type: none ! important;
+}
+
+#subnav a{
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 69%; 
+  FONT-FAMILY: Verdana, Arial, 'Helvetica 65 Medium';
+  COLOR: #000; 
+  float: left;
+  padding: 4px 2px 2px 2px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+#subnav a:link.active, #subnav a:visited.active
+{
+      font-weight: bold;
+}
+
+
+#tabcontainer #tabnav .iconedit{
+ border: 0px ! important; 
+ BACKGROUND: url(/images/orange_with_dot.gif) no-repeat 7px 7px;
+ 
+}
+
+#tabcontainer #tabnav .iconedit:hover{
+ text-decoration: underline ! important;
+}
+        

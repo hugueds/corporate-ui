@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>Home | Scania</title>
+  
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+  <!-- 
+  To the link/import list below, add the components that the page will include. Components can be found on in the UX Library at static.scania.com/ux-library (internal users only).
+  -->
+  <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Navigation/main-hero/main-hero.html">
+
+  <script>
+
+  // The script below simulates your script for setting current menu item to active. This action you can solve depending on what tools your are using with out templates. Or keep and develop this script.
+
+  $(function(){
+    $('c-main-navigation primary-items > nav-item > a').on('click', function(event) {
+      event.preventDefault();
+      $(this).parents('.top-level').removeClass('active');
+      $(this).parent().siblings().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  });
+
+  </script>
+
+</head>
+<body class="scania app">
+    
+  <c-corporate-header site-name="Application Name">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+    
+  <c-main-content>
+
+    <c-main-navigation>
+      <primary-items>
+        <nav-item location="/pages/Scania/ux-library/index.html">UX Library</nav-item>
+        <nav-item location="/pages/Scania/ux-library/logotype/">Logotype</nav-item>
+        <nav-item location="/pages/Scania/ux-library/icons/">Icons</nav-item>
+        <nav-item location="/pages/Scania/ux-library/typography/">Typography</nav-item>
+        <nav-item location="/pages/Scania/ux-library/developer/" class="active">Web Applications
+          <sub-navigation caption="Web Applications">
+            <nav-item location="/pages/Scania/ux-library/developer/">Corporate UI</nav-item>          
+            <nav-item location="/pages/Scania/ux-library/component/">Available Components</nav-item>
+            <nav-item location="/pages/Scania/ux-library/template/">Templates</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/caching.html">Caching stategies</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/support.html">Request support</nav-item>            
+          </sub-navigation>
+        </nav-item>
+      </primary-items>
+
+      <secondary-items>
+        <nav-item class="dealer-locator" location="https://www.scania.com/global/en/home/dealer-locator.html">
+          <span class="scania-icon-find-a-dealer"></span> 
+          <span>Dealers</span>
+        </nav-item>
+
+        <nav-item class="visible-xs-inline-block visible-sm-inline-block" location="https://www.scania.com/group/en">
+          <span class="icon-user"></span> 
+          <span>Scania group</span>
+        </nav-item>
+      </secondary-items>
+    </c-main-navigation>
+
+    <c-main-hero image="https://static.scania.com/resources/images/demo/default-image.jpg">
+      <h1>Corporate UI</h1>
+      <p>Alpha version of the all new Corporate UI.</p>
+    </c-main-hero>
+
+    <section class="light">
+      <div class="container">
+        <!-- Style atribute added to simulate scania.com bnehaivor -->
+          <h2 style="padding: 0 10%;">PLAY AROUND!</h2>
+          <p style="padding: 0 10%;">This template is running on a Beta version of the new Web Component based framework called Corporate UI. To run this file at your server, you'll need sure <a href="http://enable-cors.org/server.html" target="_blank">that CORS is enabled</a>.
+          <p>Please use this template and change content and parameters to fit your needs. Use additional components from <a href="/pages/Scania/ux-library/component">the UX Library</a>. Stay in contact with the developers using <a href="mailto:corporate-ui@scania.com">corporate-ui@scania.com</a></p>
+          
+      </div>
+    </section>
+
+  </c-main-content>
+
+  <c-corporate-footer>
+    <c-social-share>
+      <c-social-media name="facebook" link="https://www.facebook.com/search/top/?q=%23scania"></c-social-media>
+      <c-social-media name="twitter" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="linkedin" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="instagram" link="https://www.instagram.com/explore/tags/scania/"></c-social-media>
+      
+      <c-social-media name="vk" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="weibo" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+    </c-social-share>
+
+    <nav-item location="#">privacy policy</nav-item>
+    <nav-item location="#">terms &amp; conditions</nav-item>
+    <nav-item location="#">cookies</nav-item>
+    <nav-item location="#">site map</nav-item>
+    <nav-item location="#">contact us</nav-item>
+    <nav-item location="#">accessibility</nav-item>
+  </c-corporate-footer>
+</body>
+</html>

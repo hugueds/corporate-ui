@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html>
+
+<head id="ctl00_Head1"><title>
+	VRPC
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link href="https://static.scania.com/resources/images/compressed/logotypes/favicon.ico" rel="shortcut icon" />
+    <!-- Scania Bootstrap -->
+    <link rel="stylesheet" href="https://static.scania.com/prod/css/global/ver20130920/scania-intranet-styles.css" />
+    
+    <script src="https://static.scania.com/build/global/1.2.0/js/scania-intranet-scripts.js" type="text/javascript"></script>
+    <link href="https://static.scania.com/build/global/1.8.0/css/scania-bootstrap.css" rel="stylesheet" /><link href="https://static.scania.com/resources/fonts/external_fonts.css" rel="stylesheet" /><link href="https://static.scania.com/resources/fonts/font-awesome/font-awesome.css" rel="stylesheet" /><link href="https://static.scania.com/vendors/frameworks/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet" /><link href="https://static.scania.com/build/global/1.3.1/css/bootstrap/scania-bootstrap-overrides.css" rel="stylesheet" /><link href="https://static.scania.com/build/users/vrpc/1.0.0/css/vrpc.css" rel="stylesheet" type="text/css" /><link href="//static.scania.com/vendors/components/jQuery/smartmenus/0.9.7/css/sm-core-css.css" rel="stylesheet" type="text/css" /><link href="css/prettyPhoto.css" rel="stylesheet" media="screen" /><link href="css/autocomplete.css" rel="stylesheet" media="screen" /><link href="css/vrpcCustom.css" rel="stylesheet" media="screen" />
+    <script type="text/javascript" src="https://static.scania.com/vendors/frameworks/jQuery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://static.scania.com/vendors/components/jQuery/chosen/1.1.0/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="//static.scania.com/vendors/components/bootstrap/touchspin/2.8.0/js/bootstrap.touchspin.js"></script>
+    <script type="text/javascript" src="//static.scania.com/vendors/components/bootstrap/tree/1.1.0/js/bootstrap.tree.js"></script>
+    <script type="text/javascript" src="https://static.scania.com/build/users/vrpc/1.1.0/js/audio-script.js"></script>
+
+    <script type="text/javascript" src="https://static.scania.com/vendors/components/jQuery/jPlayer/2.2.0/js/jquery.jplayer.js"></script>	
+    <script type="text/javascript" src="//static.scania.com/vendors/components/jQuery/smartmenus/0.9.7/jquery.smartmenus.min.js"></script>
+    <script type="text/javascript" src="//static.scania.com/vendors/components/jQuery/smartmenus/0.9.7/addons/bootstrap/jquery.smartmenus.bootstrap.min.js"></script>    
+    <script type="text/javascript" src="js/VRPCBaseFunctions.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="js/jquery.spinner.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- Including the Guided Tour  -->
+    <script type="text/javascript" src="https://static.scania.com/vendors/components/jQuery/bootstrap-tour/0.10.1/js/bootstrap-tour.min.js"></script>
+    <link rel="stylesheet" href="https://static.scania.com/vendors/components/jQuery/bootstrap-tour/0.10.1/css/bootstrap-tour.css" />
+    <script src="https://static.scania.com/build/users/vrpc/1.1.0/js/application-introduction.js"></script>
+
+    <!-- Google Analytics for Guided Tour  -->
+    <script src="https://static.scania.com/build/users/vrpc/1.1.0/google-analytics/google.js"></script>
+
+    <style type="text/css">
+        .bootstrap .search-filters ul, .bootstrap .search-filters ol
+        {
+            padding-left: 0 !important;
+        }
+        .vrpc .toolbox 
+        {
+            padding: 3px 8px 2px !important;
+            margin: 3px 0;
+            width: 550px !important;
+        }
+    </style>
+    <script type="text/javascript">
+        function player() {
+
+            $('head').append('<link rel="stylesheet" href="https://static.scania.com/vendors/components/jQuery/jPlayer/2.2.0/css/audioplayer.css" />"/>');
+
+            $(".player").html("\
+         <h3>German Radio Promotion</h3>\
+         <p>Der Radiospot informiert über das Komplettserviceangebot in unserer Scania Werkstatt in Bielefeld inklusive Service an Aufliegern und Reifen. Der Spot wurde bei einem regionalen Radiosender während eines Monats abgespielt.</p>\
+        <div id='jquery_jplayer_1' class='jp-jplayer'></div>\
+        <div id='jp_container_1' class='jp-audio'>\
+        <div class='jp-controls'>\
+        <a class='jp-play'><i class='icon-play'></i></a>\
+        <a class='jp-pause'><i class='icon-pause'></i></a>\
+        </div>\
+        <div class='jp-progress'>\
+                    <div class='jp-seek-bar'>\
+                    <div class='jp-play-bar'>\
+                    </div>\
+                    </div>\
+                    <div class='jp-current-time'></div>\
+                    </div>\
+                    <div class='jp-no-solution'>\
+                    Media Player Error<br>\
+                   Update your browser or Flash plugin\
+                   </div>\
+                   </div>\
+                    ");
+
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        mp3: "https://static.scania.com/build/users/vrpc/sounds/7690131-001.mp3"
+                    });
+                },
+                swfPath: "js",
+                supplied: "mp3",
+                wmode: "window",
+                smoothPlayBar: true,
+                keyEnabled: true,
+                remainingDuration: true,
+                toggleDuration: true,
+                volume: 1
+            });
+
+            jQuery(document).ready(function () {
+                $.when(
+            $.getScript("https://static.scania.com/vendors/components/jQuery/jPlayer/2.2.0/js/jquery.jplayer.js"),
+            $.Deferred(function (deferred) {
+                $(deferred.resolve);
+            })
+        ).done(init);
+            });
+            $("#google_translate_element a").removeAttr("href");
+
+        }
+
+	 function init() {
+            return;
+        }
+
+        function HideInterview() {
+            $('#germanInterview').remove();
+        }
+        </script>
+    
+<link href="https://static.scania.com/resources/images/compressed/logotypes/favicon.ico" rel="shortcut icon" />
+<!-- Slider revolution -->
+<script type="text/javascript" src="https://static.scania.com/vendors/components/jQuery/slider-revolution/4.6.1/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="https://static.scania.com/vendors/components/jQuery/slider-revolution/4.6.1/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<link href="https://static.scania.com/vendors/components/jQuery/slider-revolution/4.6.1/rs-plugin/css/settings.css" rel="stylesheet" />
+
+<style>
+    .tp-container {
+        width:100%;
+        position:relative;
+        padding:0;
+    }
+
+    .tp-banner{
+        width:100%;
+        position:relative;
+    }
+
+    .tp-caption {
+        font-family: 'Open Sans';
+        font-weight: normal;
+        font-size: 30px;
+        color:#fff;
+        z-index: 7; 
+        max-width: auto; 
+        max-height: auto; 
+        white-space: nowrap;
+    }
+
+    .header-1 {
+        font-size: 33px;
+        font-weight: bold;
+        line-height: 34px
+    }
+
+    .header-1b {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .header-2 {
+        font-size: 22px;
+        color:#5d502;
+    }    
+
+    .deadline {
+        font-size: 18px;
+    }    
+   
+
+</style>
+
+<!-- End slider revolution -->
+
+<div class="embed-responsive embed-responsive-16by9">
+    <!-- HTML5 vid tag -->
+    <video class="embed-responsive-item" id="video" onended="video.load();" onclick="this.paused ? this.play() : this.pause();" controls="controls" poster="https://vrp.scania.com/img/FilmPoster/vrs_ad_film_poster.jpg" width="100%">
+        <!-- .mp4 file for native playback in IE9+, Firefox, Chrome, Safari and most mobile browsers -->
+        <source src="https://static.scania.com/build/users/vrpc/videos/external/scania-ad.mp4" type="video/mp4" />
+        <!-- flash fallback for IE6, IE7, IE8 and Opera -->
+        <object type="application/x-shockwave-flash"
+            data="swf/flowplayer-3.2.18.swf" width="100%">
+            <param name="movie" value="swf/flowplayer-3.2.18.swf" />
+            <param name="allowFullScreen" value="true" />
+            <param name="wmode" value="transparent" />
+            <!-- note the encoded path to the image and vid files, relative to the .swf! -->
+            <!-- more on that here: http://en.wikipedia.org/wiki/Percent-encoding -->
+            <param name="flashVars"
+                value="config={'playlist':['..%2Fimg%2Fposter.jpg',{'url':'..%2Fvid%2vrs_long_1_151213_big.mp4','autoPlay':false}]}" />
+            <!-- fallback image if flash fails -->
+            <img src="https://vrp.scania.com/img/FilmPoster/vrs_ad_film_poster.jpg" width="100%" title="No Flash found" />
+        </object>
+    </video>
+</div>
+<div>
+    &nbsp;
+</div>
+<div>
+		<table class="table table-striped" cellspacing="0" border="0" id="ctl00_MainContent_acNewsHome_gvActiveNews" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                 <div class="pull-right">
+                    <div style="display: block;">
+                        <a href="/uploaded_docs/Scania_Consumables_A5_WS_3mars.pdf" class="btn btn-xs btn-default btn-attachment"
+                            target="_blank"><i class="icon-download-alt icon-white"></i> Download Attachment</a>
+                    </div>
+                </div>
+
+                <strong><a href="#">
+                    Bulletin- VRS Workshop Supplier New Assortment</a></strong>
+                <br />
+                <small class="text-muted">Published
+                    17/03/2017</small>
+                <p>
+                    Bulletin- VRS Workshop Supplier - New Assortment
+                </p>
+               
+            </td>
+			</tr><tr>
+				<td>
+                <itemtemplate>
+                    <div class="pull-right">
+                        <div style="display: block;">
+                            <a href="/uploaded_docs/Scania-Concept-Book-VRS_210x297mm_2015 FINAL.pdf" class="btn btn-xs btn-default btn-attachment" target="_blank"> <i class="icon-download-alt icon-white"></i> Download Attachment</a>
+                        </div>
+                    </div>
+
+                    <strong>  <a href="#"> Scania Concept Book VRS 2015 Final</a></strong>
+                    <br />
+                    <small class="text-muted">Published 13/10/2015</small>
+                    <p>
+                        Scania- VRS Concept Book
+                    </p>
+            </itemtemplate>
+            </td>
+			</tr><tr>
+				<td>
+                 <div class="pull-right">
+                    <div style="display: block;">
+                        <a href="/uploaded_docs/151008 VRS Printed Catalogue Edition 2016 (1).docx" class="btn btn-xs btn-default btn-attachment"
+                            target="_blank"><i class="icon-download-alt icon-white"></i> Download Attachment</a>
+                    </div>
+                </div>
+
+                <strong><a href="#">
+                    VRS Printed Catalogue Edition 2016</a></strong>
+                <br />
+                <small class="text-muted">Published
+                    16/10/2015</small>
+                <p>
+                    VRS Printed Catalogue Edition 2016
+                </p>
+               
+            </td>
+			</tr><tr>
+				<td>
+                <itemtemplate>
+                    <div class="pull-right">
+                        <div style="display: none;">
+                            <a href="" class="btn btn-xs btn-default btn-attachment" target="_blank"> <i class="icon-download-alt icon-white"></i> Download Attachment</a>
+                        </div>
+                    </div>
+
+                    <strong>  <a href="#"> Warranty VRS</a></strong>
+                    <br />
+                    <small class="text-muted">Published 10/09/2014</small>
+                    <p>
+                        VRS parts should be treated as any other Scania part, i.e. the common processes should be used. This means that Scania Warranty Manual 2014 is also applicable for VRS parts.
+
+•       VRS-part mounted on Scania Chassis or Engine
+Use Normal Warranty routine for spare part
+
+•       The Scania warranty system can only handle Scania Chassis and engine numbers today.
+This means that VRS-parts that are mounted on for instance Trailers and other Truck makes must be claimed as: Part from stock
+
+•       Claims on SAF-Holland parts must be supported with additional information, see Warranty Manual E3.6.2
+
+                    </p>
+            </itemtemplate>
+            </td>
+			</tr>
+		</table>
+	</div>
+<div class="pull-right">
+   <b> <a href="News.aspx">
+       Archived News </a></b>
+</div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        function ShowModalPopUp(modaHeading, modalBodyContent) {
+            $('#myModal .modal-body').html(modalBodyContent);
+            $('#myModal #myModalLabel').text(modaHeading);
+            $("#myModal").modal('show');
+        }
+
+    </script>
+
+                                </div>
+                            
+</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div id="divMiniCart" class="tour-step-8">
+                        
+<div id="miniShoppingcart">
+    
+<h3>
+    <i class="icon-shopping-cart icon-white" style="vertical-align: inherit"></i>&nbsp;Selection List</h3>
+
+<div id="ctl00_MiniShoppingcart_MiniShoppingcart_divNoResultMessage" class="row">
+    <div class="col-xs-12">
+        <h6>
+            No Items In Selection List
+        </h6>
+    </div>
+</div>
+
+
+</div>
+
+                    </div>
+
+                    <div id="divCrossreference" class="tour-step-5">
+                        <h3>
+                            <i class="icon-list-alt icon-white" style="vertical-align: inherit"></i>&nbsp;Multi Cross Search</h3>
+                        <a href="Cross.aspx">
+                            Check Cross Reference</a>
+                    </div>
+
+                    
+                    <div id="divminiInspectionList">
+                        <h3><i class="icon-list-alt icon-white" style="vertical-align: inherit"></i>&nbsp;Inspections list
+                            </h3>
+                        <a href="/Poster.aspx?catg=1">
+                            To increase rapid 	inspection, please have a look at our inspection list</a>
+                    </div>
+
+                     <div id="divminiWishList" class="tour-step-10">
+                        <h3>
+                            
+                            <i class="icon-envelope icon-white" style="vertical-align: inherit"></i>&nbsp;Request of new parts</h3>
+                        <a href="Wish.aspx">
+                            Click to tell us what products you wish to have included in the assortment</a>
+                    </div>
+                    
+                    
+                    <div id="divminiPosters" class="tour-step-5">
+                        <h3><img id="ctl00_imgposter" src="Images/poster.png" style="border-width:0px;" />
+                            <i style="vertical-align: inherit"  ></i>&nbsp;PDF Posters</h3>
+                        
+                        <a href="/Poster.aspx?catg=2">
+                            Posters
+                        </a>
+                    </div>
+
+                   
+                     <div id="divminiContactList">
+                        <h3>
+                            <i class="icon-user icon-white" style="vertical-align: inherit"></i>&nbsp;Contact List</h3>
+                        <a href="Contacts.aspx">
+                            Click to find the right person to answer your questions</a>
+                    </div>
+                    <div id="germanInterview" class="player"></div>
+
+
+                    <div id="divFilm">
+                        <h3><i class="icon-list-alt icon-white" style="vertical-align: inherit"></i>&nbsp;FILM:
+                            <br />
+                            Why is it important with VRS?
+                        </h3>
+                        <!-- HTML5 vid tag -->
+                        <video class="embed-responsive-item" id="Sitevideo" onended="Sitevideo.load();" onclick="this.paused ? this.play() : this.pause();" controls="controls" poster="https://vrp.scania.com/img/FilmPoster/poster.jpg" width="100%">
+                            <!-- .mp4 file for native playback in IE9+, Firefox, Chrome, Safari and most mobile browsers -->
+                            <source src="https://static.scania.com/build/users/vrpc/videos/internal/about-vrs.mp4" type="video/mp4" />
+                            <!-- flash fallback for IE6, IE7, IE8 and Opera -->
+                            <object type="application/x-shockwave-flash"
+                                data="swf/flowplayer-3.2.18.swf" width="100%">
+                                <param name="movie" value="swf/flowplayer-3.2.18.swf" />
+                                <param name="allowFullScreen" value="true" />
+                                <param name="wmode" value="transparent" />
+                                <!-- note the encoded path to the image and vid files, relative to the .swf! -->
+                                <!-- more on that here: http://en.wikipedia.org/wiki/Percent-encoding -->
+                                <param name="flashVars"
+                                    value="config={'playlist':['..%2Fimg%2Fposter.jpg',{'url':'..%2Fvid%2vrs_long_1_151213_big.mp4','autoPlay':false}]}" />
+                                <!-- fallback image if flash fails -->
+                                <img src="https://vrp.scania.com/img/FilmPoster/poster.jpg" width="100%" title="No Flash found" />
+                            </object>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container portal-footer text-center">
+            © Copyright Scania 2012 All rights reserved. | <a href="https://www.scania.com/group/en/legal-notice/">Legal
+                notice</a> | <a href="https://www.scania.com/group/en/privacy-statement/">Privacy statement</a> | <a href="https://www.scania.com/group/en/about-cookies/">
+                    Cookies</a> | Scania AB (publ), SE-151 87 Södertälje, Sweden<br />
+            Tel: +46-8-55 38 10 00, Fax: +46-8-55 38 10 37, Mail: <a href="mailto:vrs@scania.com">
+                vrs@scania.com</a>
+        </div>
+    </div>
+    
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker('UA-13177351-1');pageTracker._trackPageview();}catch(err) {}</script>
+<script type="text/javascript">
+//<![CDATA[
+HideInterview();UpdateMiniShoppingcart();startupScript();Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"ctl00_searchBox_upSearchBox","displayAfter":0,"dynamicLayout":true}, null, null, $get("ctl00_searchBox_upProSearchBox"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"ctl00_MainContent_newParts1_upNewParts","displayAfter":0,"dynamicLayout":true}, null, null, $get("ctl00_MainContent_newParts1_upProNewParts"));
+});
+//]]>
+</script>
+</form>
+</body>
+    <script type="text/javascript" src="https://static.scania.com/build/global/1.8.0/js/scania-bootstrap.js"></script>
+    <script src="https://static.scania.com/vendors/components/jQuery/loading/2.0.0/js/jquery.loading.js" type="text/javascript"></script>
+    <script src="https://vrp.scania.com/vrsbanner/vrpc/banner/vrs-homepage-banner.js" type="text/javascript"></script>
+</html>

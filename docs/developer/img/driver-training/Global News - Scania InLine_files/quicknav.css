@@ -1,0 +1,137 @@
+
+div.QuickNavInputTitle {
+	padding-bottom:0px;
+	margin-bottom:0px;
+	font-weight:normal;
+	font-size:10px;
+}
+
+input.QuickNavInput {
+	width:300px; 
+	color:#828282;
+	margin-right:10px;
+	margin-top:0px;
+	padding-top:0px;
+	padding-bottom:3px;
+	line-height: 1.4;
+}
+
+#QuikNavResult{
+	position: absolute;
+	/*visibility: hidden;*/
+	width: 300px;
+	/* height: 100%;
+	max-height:100%; */
+	height: auto;
+	left: 71%;
+	top: 28px;
+	background-color: #fff;
+	/* border: 1px solid #ccc; */
+	padding: 0px;
+	/* padding: 1em; */
+	border-top: 1px solid #999999; /* #ccc; */
+	border-left: 1px solid #999999; /* #ccc; */
+	border-right: 3px ridge #ccc;
+	border-bottom: 3px ridge #ccc;
+	/* border:1px #000 dotted; */
+	z-index: 99;
+	FONT-FAMILY: Verdana, Arial, 'Helvetica 65 Medium'; 
+}
+
+#QuikNavResult a {COLOR: #000; font-size:69%; font-weight:normal; text-decoration:none; display:block;}
+#QuikNavResult a.hover{ COLOR: #336; FONT-WEIGHT: normal; TEXT-DECORATION: none ! important; }
+
+#QuikNavResult A.homepage {BACKGROUND: url(/images/Link_homepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.homepage_2 {BACKGROUND: url(/images/Link_homepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.subhomepage {BACKGROUND: url(/images/Link_Subhomepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.subhomepage_2 {BACKGROUND: url(/images/Link_Subhomepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; }
+
+#QuikNavResult A.ScaniaLink {BACKGROUND: url(/images/Link_ScaniaLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.ScaniaLink_2 {BACKGROUND: url(/images/Link_ScaniaLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; }
+
+#QuikNavResult A.wwwLink {BACKGROUND: url(/images/Link_wwwLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.wwwLink_2 {BACKGROUND: url(/images/Link_wwwLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff;}
+
+#QuikNavResult A.channel {BACKGROUND: url(/images/Channel.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.channel_2 {BACKGROUND: url(/images/Channel.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff;}
+
+#QuikNavResult A.profile {BACKGROUND: url(/images/profile.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.profile_2 {BACKGROUND: url(/images/profile.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.org {BACKGROUND: url(/images/org_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.org_2 {BACKGROUND: url(/images/org_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.sub {BACKGROUND: url(/images/subj_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.sub_2 {BACKGROUND: url(/images/subj_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.News {BACKGROUND: url(/images/newsarticle.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.News_2 {BACKGROUND: url(/images/newsarticle.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.rss {BACKGROUND: url(/images/Small_RSS.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.rss_2 {BACKGROUND: url(/images/Small_RSS.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.tag {BACKGROUND: url(/images/Icon_Keywords.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.tag_2 {BACKGROUND: url(/images/Icon_Keywords.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.wikipage {BACKGROUND: url(/images/icon_wikipage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.wikipage_2{BACKGROUND: url(/images/icon_wikipage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff;}
+
+#QuikNavResult A.wikicategory{BACKGROUND: url(/images/icon_category.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.wikicategory_2{BACKGROUND: url(/images/icon_category.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff;}
+
+#QuikNavResult A.other {BACKGROUND: url(/images/square_orange.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.other_2 {BACKGROUND: url(/images/square_orange.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#QuikNavResult A.homepage:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.subhomepage:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.ScaniaLink:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.wwwLink:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.channel:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.profile:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.largeprofile:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.org:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.sub:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.News:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.News:rss{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.tag:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.wikipage:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.wikicategory:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.other:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+
+#QuikNavResult A.homepage:active, #QuikNavResult A.subhomepage:active, #QuikNavResult A.ScaniaLink:active, #QuikNavResult A.wwwLink:active, #QuikNavResult A.channel:active, #QuikNavResult A.org:active, #QuikNavResult A.sub:active, #QuikNavResult A.News:active, #QuikNavResult A.rss:active, #QuikNavResult A.tag:active, #QuikNavResult A.wikipage:active, #QuikNavResult A.wikicategory:active, #QuikNavResult A.other:active{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+
+#QuikNavResult A.homepage_2:hover, #QuikNavResult A.subhomepage_2:hover, #QuikNavResult A.ScaniaLink_2:hover, #QuikNavResult A.wwwLink_2:hover,#QuikNavResult A.channel_2:hover, #QuikNavResult A.profile_2:hover, #QuikNavResult A.largeprofile_2:hover, #QuikNavResult A.org_2:hover, #QuikNavResult A.sub_2:hover ,#QuikNavResult A.News_2:hover, #QuikNavResult A.rss_2:hover, #QuikNavResult A.tag_2:hover, #QuikNavResult A.wikipage_2:hover, #QuikNavResult A.wikicategory_2:hover, #QuikNavResult A.other_2:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#QuikNavResult A.homepage_2:active, #QuikNavResult A.subhomepage_2:active, #QuikNavResult A.ScaniaLink_2:active, #QuikNavResult A.wwwLink_2:active, #QuikNavResult A.channel_2:active, #QuikNavResult A.org_2:active, #QuikNavResult A.sub_2:active, #QuikNavResult A.News_2:active, #QuikNavResult A.rss_2:active, #QuikNavResult A.tag_2:active, #QuikNavResult A.wikipage_2:active, #QuikNavResult A.wikicategory_2:active, #QuikNavResult A.other_2:active{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+
+#QuikNavResult A.largeprofile {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#QuikNavResult A.largeprofile_2 {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; }
+
+#QuikNavResult A.error {TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+
+#QuikNavResult A.geoitem {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 2px; PADDING-BOTTOM: 2px; background-color: #ececed;}
+#QuikNavResult A.geoitem_2 {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 2px; PADDING-BOTTOM: 2px; background-color: #fff;}
+#QuikNavResult A.geoitem:hover, #QuikNavResult A.geoitem:active {background-color: #fff;}
+
+#ajaxLoading { display: block; COLOR: #000; font-size:69%; TEXT-ALIGN: center; BACKGROUND: url(/ajax/loading.gif) no-repeat 138px 1px; }
+
+A.childobject
+{
+left:20px;
+border:1px solid black;
+position:absolute;
+background:white;
+width: 100%;
+display: none;
+padding: 4px 4px;
+font-size:69% ! important;
+}
+
+.groupitem {TEXT-INDENT: 0px; PADDING-LEFT: 0px; PADDING-TOP: 2px; PADDING-BOTTOM: 4px; background-color: #ececed; }
+.groupitem A:hover { COLOR: #000; TEXT-DECORATION: none ! important;}
+.groupitem_2{TEXT-INDENT: 0px; PADDING-LEFT: 0px; PADDING-TOP: 2px; PADDING-BOTTOM: 4px; background-color: #fff; } 
+.groupitem_2 A:hover { COLOR: #000; TEXT-DECORATION: none ! important;}
+.groupitemarrow {PADDING-RIGHT: 10px; PADDING-TOP: 0px; BACKGROUND: url(/images/quicknav_arrowright.gif) no-repeat 0px 5px; float:right;}
+
+#highl { font-weight:bold ! important; } 
+A #highl { text-decoration:underline;}

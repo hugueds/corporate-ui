@@ -1,0 +1,141 @@
+{
+	"keys": {
+		"headline": "UX-processen",
+		"name": "Phasen",
+		"before": "Methoden",
+		"after": "Ergebnistypen",
+		"text": "Gründe",
+		"extra": "Schwelle"
+	},
+	"items": [
+		{
+			"name": "Entdecken",
+			"before": [
+				"user research",
+				"business vision"
+			],
+			"after": [
+				"personas",
+				"requirements",
+				"secondary research",
+				"user stories",
+				"task flow",
+				"user journey",
+				"experience map"
+			],
+			"text": "Business priorities often lack the reality of user needs and decisions are made based on what we \"think\" is needed rather than what is \"truly\" needed.\n\nUX has strategic aspects that involve a deep understanding of the business, the users, and context in which they operate."
+		},
+		{
+			"name": "Ideen finden",
+			"before": [
+				"whiteboarding",
+				"workshop",
+				"story boarding",
+				"card sorting"
+			],
+			"after": [
+				"story board",
+				"use cases",
+				"user scenarios",
+				"information arch",
+				"screen flow",
+				"layout & navigation"
+			],
+			"text": "There is a solution for every problem, but no problem could be solved if you don’t know what the problem is?\n\nA \"Well Defined & Figured Out Problem Gets Solved Far Easily\". Hence, it is absolutely essential to ideate before going into finer details of designing a product or service."
+		},
+		{
+			"name": "Planen",
+			"before": [
+				"planing workshop"
+			],
+			"after": [
+				"prioritized use case",
+				"prioritized users",
+				"design road map"
+			],
+			"text": "User experience is not a siloed practice. To collect knowledge and generate solutions, it’s best to bring people together.\n\nTo plan and prioritize users, use cases and features that should to be supported by the solution is essential in order to create an integrated and unified user experience — let alone a consistent omnichannel design."
+		},
+		{
+			"name": "Schärfen",
+			"before": [
+				"lo-fi prototypes",
+				"hi - fi prototypes",
+				"user testing",
+				"expert evaluation"
+			],
+			"after": [
+				"wireframes",
+				"validation",
+				"iterations",
+				"visual design",
+				"interaction design",
+				"development support"
+			],
+			"text": "While skipping prototyping might save some time during design, that surplus can be lost many times over in development. If we test-drive our trucks before we launch them, then it only makes sense to test our designs interactively before they go into development.\n\nWhen we define our ideas and solutions in protototypes it´s easy to validate with users and foster a shared vision."
+		},
+		{
+			"name": "Testen",
+			"before": [
+				"user testing",
+				"market validation",
+				"analytics"
+			],
+			"after": [
+				"evaluation roadmap",
+				"benchmarking report",
+				"acceptance criterias",
+				"ux design"
+			],
+			"extra": {
+				"headline": "UX threshold",
+				"text": "UX is key for complex applications because users must be able to understand how to use it but also find value in using it. Neglecting UX often result in frustrated users, time consuming and seldom used applications. Hence, it is absolutely essential to validate our assumptions, ideas and insights before going into sprint start instead of wasting tons of resources and money."
+			},
+			"text": "You can’t fix something if you don’t know that it’s broken. Companies and agencies that foster a culture of testing can identify what is broken or not working at its best, and develop fixes centered around those results.\n\nUsability testing is helpful because it focuses on actual behavioral patterns and design solutions as opposed to solely relying on the assumptions and prescribed solutions by business."
+		},
+		{
+			"name": "Sprint 1",
+			"before": [
+				"sprint start",
+				"design hand over",
+				"user stories",
+				"corporate ui intro"
+			],
+			"after": [
+				"shared vision",
+				"clear requirements",
+				"reuse of components",
+				"markup code"
+			],
+			"text": "Be sure to bring UX specialists and designers onto your team from the very beginning so they can help establish and test the big picture vision for the product, and help keep the team’s eye on this vision as the project unfolds.\n\nBringing UX specialists onto your team early helps the team work together in setting up work processes that maximize collaboration and efficiency between the testers, designers, and developers. "
+		},
+		{
+			"name": "Sprint #",
+			"before": [
+				"develop",
+				"testing",
+				"validate",
+				"user review"
+			],
+			"after": [
+				"iterations"
+			],
+			"text": "It has long been recognized that user interfaces should be designed iteratively in almost all cases because it is virtually impossible to design a user interface that has no usability problems from the start.\n\nIterative development of user interfaces involves steady refinement of the design based on user testing and other evaluation methods."
+		},
+		{
+			"name": "Release",
+			"before": [
+				"training",
+				"support"
+			],
+			"after": [
+				"useful",
+				"usable",
+				"desirable",
+				"findable",
+				"accessible",
+				"credible"
+			],
+			"text": "Following a user-centered design approach helps clarify the user and business needs up front and avoids costly rework in later stages.\n\nUX activities such as stakeholder interviews, user research, user testing, and early prototyping can therefore help establish a clear scope and common understanding between business and development – thus saving time and money spent on redeveloping an unusable system."
+		}
+	]
+}

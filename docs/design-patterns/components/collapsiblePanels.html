@@ -1,0 +1,482 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Collapsible panels - Design Patterns</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" contnet="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Collapsible panels">
+        <meta property="og:description" content="">
+
+        <script src="https://static.scania.com/resources/logotype/favicon/favicons.js"></script>
+        
+
+
+        <!--[if lt IE 9]>
+            <script src="vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../styles/vendor.css" rel="stylesheet"/>
+        <link href="../styles/main.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://static.scania.com/ux-library/ux-lib.css">
+
+        <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>         
+
+        <link rel="stylesheet" type="text/css" href="https://static.scania.com/vendors/components/pure-js/highlight.js/styles/color-brewer.css">
+        <script src="https://static.scania.com/vendors/components/pure-js/highlight.js/highlight.pack.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    </head>
+    <body class="scania">
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <link href="../styles/main.css" rel="stylesheet"/>
+<c-main-content class="app">
+
+
+
+ 
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                    <li class="category">basics</li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/colors.html"> Colors </a>
+                                    </li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/grid.html"> Grid </a>
+                                    </li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/icons.html"> Icons </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/layouts.html"> Layouts </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/links.html"> Links </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/typography.html"> Typography </a>
+                                    </li>
+                                    <li class="category">elements</li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/alerts.html"> Alerts and notifications </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/breadcrumbs.html"> Breadcrumbs </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/buttons.html"> Buttons </a>
+                                    </li>
+                                    <li  class="active"  >
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/collapsiblePanels.html"> Collapsible panels </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/dialogs.html"> Dialogs </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/formControls.html"> Form controls </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/forms.html"> Forms </a>
+                                    </li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/labelsAndBadges.html"> Labels and badges </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/menus.html"> Menus </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/metadata.html"> Metadata </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/pagination.html"> Pagination </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/popovers.html"> Popovers </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/progressBars.html"> Progress and loading </a>
+                                    </li>
+                                
+                                             <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/stepIndicators.html"> Step indicators </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tables.html"> Tables </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tabs.html"> Tabs </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tags.html"> Tags </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tooltips.html"> Tooltips </a>
+                                    </li>
+                    
+                        
+                    
+                        
+                    
+                
+                    <li class="category">patterns</li>
+                    
+                        
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/cards.html"> Cards </a>
+                                    </li>
+                                
+                                             <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/dataFormats.html"> Data formats </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/fileUpload.html"> File upload </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/filters.html"> Filters </a>
+                                    </li>
+                                
+                                             <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/help.html"> Help </a>
+                                    </li>
+
+                 
+            </ul>
+        </nav>
+        <section class="pl-content">
+            
+            <div class="pl-pattern">
+  <h3>Collapsible panels</h3>
+
+  <h4 id="purpose">Purpose</h4>
+  <p>Users need to see only relevant content.</p>
+
+  <h4 id="description">Description</h4>
+  <p>Collapsible panels provide users with the ability to expand and collapse content as needed. They can simplify the interface by hiding content until it is needed.</p>
+
+  <p> </p>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="behaviors">Behaviors</h3>
+
+  <p>Collapsible panels can operate as either single-select (accordion) or multi-select.</p>
+
+  <ul>
+    <li><strong>Single-select</strong> allows only one panel to be expanded at any given time. Expanding a panel collapses the previously expanded panel. This is commonly referred to as an “Accordion”.</li>
+    <li><strong>Multi-select</strong> allows more than one panel to be expanded at any given time. Expanding a panel has no impact on the other panels.
+      <ul>
+        <li><strong>Expand/collapse all</strong> allows all panels to be expanded or collapsed simultaneously. It is important to note when all panels are in a “open” or “closed” state, the corresponding button should be disabled. When there are panels in both “open” and “closed” states, both buttons are enabled.</li>
+      </ul>
+    </li>
+  </ul>
+
+<div class="pl-preview">
+    <div class="panel-toggler">
+      <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
+    </div>
+    <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="3headingOne" data-target="#3collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="3collapseOne">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Goods/Services
+          </h4>
+        </div>
+        <div id="3collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="3headingOne">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="3headingTwo" data-target="#3collapseTwo" aria-expanded="false" data-toggle="collapse" aria-controls="3collapseTwo">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Mark info
+          </h4>
+        </div>
+        <div id="3collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3headingTwo">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="3headingThree" data-target="#3collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="3collapseThree">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Owner/Assignment
+          </h4>
+        </div>
+        <div id="3collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3headingThree">
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Project name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Invoice</td>
+                    <td><span >Add invoice confirmation</span></td>
+                    <td><span >$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span >Refactor templates to use the new templating library</span></td>
+                    <td><span >$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span >Process payments using third party api</span></td>
+                    <td><span >$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account management</td>
+                    <td><span >Improve account management workflow</span></td>
+                    <td><span >$6,000</span></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-toggler"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"expand-all"</span><span class="nt">&gt;</span>Expand All<span class="nt">&lt;/a&gt;</span><span class="ni">&amp;nbsp;</span>|<span class="ni">&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"collapse-all"</span><span class="nt">&gt;</span>Collapse All<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span> <span class="na">id=</span><span class="s">"3accordion"</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">aria-multiselectable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"3headingOne"</span> <span class="na">data-target=</span><span class="s">"#3collapseOne"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-controls=</span><span class="s">"3collapseOne"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-angle-right"</span> <span class="nt">&gt;&lt;/i&gt;</span>Header
+        <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"3collapseOne"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse in"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"3headingOne"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+           ...
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
+
+</div>
+
+<div class="pl-pattern">
+
+  <h3 id="styles">Styles</h3>
+
+  <h4 id="standard">Standard</h4>
+
+  <p>The standard style provides more distinction between the panel and internal/surrounding content. This is useful for more complex layouts.</p>
+
+<div class="pl-preview">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="collapseOne">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Goods/Services
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" data-toggle="collapse" aria-controls="collapseTwo">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Mark info
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="collapseThree">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Owner/Assignment
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Project name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Invoice</td>
+                    <td><span >Add invoice confirmation</span></td>
+                    <td><span >$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span >Refactor templates to use the new templating library</span></td>
+                    <td><span >$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span >Process payments using third party api</span></td>
+                    <td><span >$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account management</td>
+                    <td><span >Improve account management workflow</span></td>
+                    <td><span >$6,000</span></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span> <span class="na">id=</span><span class="s">"accordion"</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">aria-multiselectable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingOne"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">data-target=</span><span class="s">"#collapseOne"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-angle-right"</span> <span class="nt">&gt;&lt;/i&gt;</span>Header
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseOne"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse in"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingOne"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
+
+  <h4 id="light">Light</h4>
+
+  <p>For simple content or layouts, the light style may work better.</p>
+
+<div class="pl-preview">
+    <div class="panel-group" id="2accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="2headingOne" data-parent="#2accordion" data-target="#2collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="2collapseOne">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Goods/Services
+          </h4>
+        </div>
+        <div id="2collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2headingOne">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="2headingTwo" data-parent="#2accordion" data-target="#2collapseTwo" aria-expanded="false" data-toggle="collapse" aria-controls="2collapseTwo">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Mark info
+          </h4>
+        </div>
+        <div id="2collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingTwo">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="2headingThree" data-parent="#2accordion" data-target="#2collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="2collapseThree">
+          <h4 class="panel-title">
+              <i class="icon icon-angle-right" ></i>Owner/Assignment
+          </h4>
+        </div>
+        <div id="2collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingThree">
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Project name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Invoice</td>
+                    <td><span >Add invoice confirmation</span></td>
+                    <td><span >$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span >Refactor templates to use the new templating library</span></td>
+                    <td><span >$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span >Process payments using third party api</span></td>
+                    <td><span >$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account management</td>
+                    <td><span >Improve account management workflow</span></td>
+                    <td><span >$6,000</span></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group"</span> <span class="na">id=</span><span class="s">"2accordion"</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">aria-multiselectable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"2headingOne"</span> <span class="na">data-parent=</span><span class="s">"#2accordion"</span> <span class="na">data-target=</span><span class="s">"#2collapseOne"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-controls=</span><span class="s">"2collapseOne"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-angle-right"</span> <span class="nt">&gt;&lt;/i&gt;</span>Header
+      <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"2collapseOne"</span> <span class="na">class=</span><span class="s">"panel-collapse collapse in"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"2headingOne"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
+
+</div>
+
+        </section>
+    </div>
+</c-main-content>
+
+        <script src="https://static.scania.com/ux-library/ux-lib.js"></script>
+        <script src="../scripts/vendor.js"></script>
+        <script src="../scripts/plugins.js"></script>        
+        <script src="../scripts/main.js"></script>
+
+    </body>
+</html>
+

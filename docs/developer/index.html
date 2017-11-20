@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>UX Library - Developers</title>
+
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+<body unresolved class="scania">
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+  <c-main-content>
+    <c-main-navigation show-search>
+      <primary-items>
+        <nav-item location="/pages/Scania/ux-library/">Home</nav-item>
+        <nav-item location="/pages/Scania/ux-library/styleguide/">Style Guide</nav-item>            
+        <nav-item location="/pages/Scania/ux-library/developer/" class="active">Web Applications
+          <sub-navigation caption="Web Applications">
+            <nav-item location="/pages/Scania/ux-library/developer/" class="active">Corporate UI</nav-item>
+            <nav-item location="/pages/Scania/ux-library/component/">Available Components</nav-item>
+            <nav-item location="/pages/Scania/ux-library/template/">Templates</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/caching.html">Caching</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/scania-bootstrap.html">Scania Bootstrap</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/support.html">Support</nav-item>
+          </sub-navigation>
+        </nav-item>
+        <nav-item location="/pages/Scania/ux-library/mobile-apps/">Mobile Apps</nav-item>
+      </primary-items>
+    </c-main-navigation>
+
+    <style>
+     article p a {font-family: 'Scania Sans Bold'}
+    </style>
+
+
+    <section class="light">
+      <article>
+        <div class="container">
+          <h1>Corporate UI</h1>
+          <h2 style="margin-top: 0 !important">Scania's Web Components Collection</h2>
+          <p>The new Scania user interface is now largely supplied as ready to run web components. This means that you no longer has to develop common elements like the header, main navigation or the page footer. Filtered and sortable tables are available to use straight of the shelf as well as a lot of other components as well.</p>
+
+          <p>Web Components consists of several separate technologies. You can think of Web Components as reusable user interface widgets that are created using open Web technology. An existing Web Component can be used without writing much of the code, simply by adding an import statement to an HTML page. Since Web Components use new or still-developing standard browser capabilities, we are currently using Google Polymer to package the Scania components in a smart way and use their polyfills to make the components more browser independent.</p>
+
+          <h2>Latest Version!?</h2>
+          <p>We're aiming at doing weekley releases and you'll find all the information about our <a href="https://github.scania.com/Scania/corporate-ui/releases/latest" target="_blank">latest release on Scania GitHub</a>. Don't have access to Scania GitHub? Get <a href="http://orderit.scania.com/Site/PackageDetails_View.aspx?ProductId=SALT-PKG-4333-Acc" target="_blank">GitHub Enterprise via Order IT</a>. Don't planning on getting GitHub access? Then you'll always can find the latest version by <a href="https://static.scania.com/build/global" target="_blank">browsing the build folder</a>.
+
+          <h2>Ground-breaking improvement in Scania's reuse approach</h2>
+          <p>With Custom Elements (a part of the Web Components standard) Scania developers and partner companies can use functionality "off the shelf", create new HTML tags or extend the components other developers have created.</p>
+          <p>Google Polymer is the foundation of our web components and it brings a web standards-based way to create reusable components using nothing more than JS/HTML/CSS as well as using libraries or frameworks like jQuery and AngularJS to improve them even more. The result is less code, modular code, and more reuse in our applications. Now, you can totally focus on the user experience that you actually are here to develop.</p>
+
+          <h2>A single code base</h2>
+          <p>Scania stores its custom elements and Web Components in one single master repository. This gives us a unique opportunity to make continues improvements to shared elements. If for example a date picker is improved in one place, that one will immediately be available for other applications using the Scania standard. The economic effect is that much of our IT investments within this area automatically is shared and used for improvements and core UX rather than re-inventing the wheel from scratch every single time.</p>
+
+          <h2>Getting started</h2>
+          <p>In the UX Library you'll find a lot of ready to use elements and components ranging from a standalone Scania Corporate Header including our wordmark and logotype, to advanced Product Carousels and Tables with sorting, filtering and responsive utilities. Each component is/should be documented within the component itself, so basically you'll be able to download and use what you see as you're browsing the UX Library’s <a href="/pages/Scania/ux-library/component/">Components</a> and <a href="/pages/Scania/ux-library/template/">Templates</a> sections.</p>
+          <p>You can also participate in the development using our <a href="https://github.scania.com/Scania/corporate-ui">Scania Git Hub Repository</a>.
+
+            <h3>Learning about Polymer and Web Components</h3>
+            <p>Teaching about web standards, libraries and frameworks goes beyond the scope of the UX Library, but we do point some key areas of knowledge to read up on to ensure a that your project ends up with a high quality application:</p>
+
+            <h3>Strong skills in Bootstrap</h3>
+            <p>Since we will not be able to standardize each and every tailored component made at Scania IT, you'll need to develop you core UX within your project. Since we’re using the Bootstrap Grid within our components, you'll highly benefit from using it in your custom development as well. Here's a few good starting points:</p>
+            <ul>
+              <li><a href="https://www.youtube.com/playlist?list=PL7029EEFC21D2DC58" target="_blank">An introduction to Boostrap (YouTube videos)</a></li>
+              <li><a href="http://static.scania.com" target="_blank">Extending Boostrap with Corporate UI (Scania Boostrap)</a></li>
+            </ul>
+
+
+            <h3>Basic knowledge of Web Components and Google Polymer</h3>
+            <p>Using Web Components is so easy it is almost beyond imagination. Although, you will benefit from spending some time reading up on the basic ideas. Here's a few links to start out at:</p>
+            <ul>
+              <li><a href="https://meowni.ca/posts/polymer-cheatsheet/">Polymer Cheatsheet</a></li>
+              <!--             <li><a href="https://meowni.ca/posts/polymer-2-cheatsheet/">Polymer2 Cheatsheet</a></li>     -->        
+              <li><a href="https://blog.revillweb.com/why-web-components-are-so-important-66ad0bd4807a#.dyerfqvci" target="_blank">Why Web Components are so important</a></li>
+              <li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements" target="_blank">Custom Elements v1: Reusable Web Components</a></li>
+              <li><a href="https://www.polymer-project.org/1.0/start/" target="_blank">Get started with Google Polymer</a></li>
+            </ul>
+          </article>
+        </section>
+      </c-main-content>
+
+      <c-corporate-footer></c-corporate-footer>
+
+      <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+
+      <a href="https://github.scania.com/Scania/corporate-ui"><img style="position: absolute; top: 0; right: 0; border: 0; width:149px; height:149px; z-index:9999;" src="/pages/Scania/ux-library/images/clone-me-at-github.png" alt="Clone me on GitHub" data-canonical-src="/pages/Scania/ux-library/images/clone-me-at-github.png"></a>
+
+    </body>
+    </html>
+

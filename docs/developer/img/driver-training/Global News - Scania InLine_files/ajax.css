@@ -1,0 +1,69 @@
+
+#ajaxResult {
+	position: absolute;
+	/*visibility: hidden;*/
+	width: 280px;
+	/* height: 100%;
+	max-height:100%; */
+	height: auto;
+	left: 71%;
+	top: 28px;
+	background-color: #fff;
+	/* border: 1px solid #ccc; */
+	padding: 0px;
+	/* padding: 1em; */
+	border-top: 1px solid #999999; /* #ccc; */
+	border-left: 1px solid #999999; /* #ccc; */
+	border-right: 3px ridge #ccc; 
+	border-bottom: 3px ridge #ccc;
+	/* border:1px #000 dotted; */
+	z-index: 99;
+}
+
+#ajaxResult a {COLOR: #000; font-size:69%; font-weight:normal; text-decoration:none; display:block;}
+#ajaxResult a.hover{ COLOR: #336; FONT-WEIGHT: normal; TEXT-DECORATION: none ! important; }
+
+#ajaxResult A.homepage {BACKGROUND: url(/images/link_homepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.subhomepage {BACKGROUND: url(/images/Link_Subhomepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.ScaniaLink {BACKGROUND: url(/images/Link_ScaniaLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.wwwLink {BACKGROUND: url(/images/Link_wwwLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.channel {BACKGROUND: url(/images/Channel.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.profile {BACKGROUND: url(/images/profile.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.org {BACKGROUND: url(/images/org_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.sub {BACKGROUND: url(/images/subj_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.News {BACKGROUND: url(/images/newsarticle.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.rss {BACKGROUND: url(/images/Small_RSS.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.tag {BACKGROUND: url(/images/Icon_Keywords.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.role {BACKGROUND: url(/images/AccessRights_GroupOfUsers.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+
+#ajaxResult A.homepage_2 {BACKGROUND: url(/images/link_homepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.subhomepage_2 {BACKGROUND: url(/images/Link_Subhomepage.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; }
+#ajaxResult A.ScaniaLink_2 {BACKGROUND: url(/images/Link_ScaniaLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; }
+#ajaxResult A.wwwLink_2 {BACKGROUND: url(/images/Link_wwwLink.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff;}
+#ajaxResult A.channel_2 {BACKGROUND: url(/images/Channel.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff;}
+#ajaxResult A.profile_2 {BACKGROUND: url(/images/profile.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.org_2 {BACKGROUND: url(/images/org_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.sub_2 {BACKGROUND: url(/images/subj_google.gif) no-repeat 10px 4px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.News_2 {BACKGROUND: url(/images/newsarticle.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.rss_2 {BACKGROUND: url(/images/Small_RSS.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.tag_2 {BACKGROUND: url(/images/Icon_Keywords.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+#ajaxResult A.role_2 {BACKGROUND: url(/images/AccessRights_GroupOfUsers.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; } /* #f7f7f7 */
+
+#ajaxResult A.homepage:hover, #ajaxResult A.subhomepage:hover, #ajaxResult A.ScaniaLink:hover, #ajaxResult A.wwwLink:hover , #ajaxResult A.channel:hover, #ajaxResult A.profile:hover, #ajaxResult A.largeprofile:hover, #ajaxResult A.org:hover, #ajaxResult A.sub:hover, #ajaxResult A.News:hover, #ajaxResult A.News:rss, #ajaxResult A.tag:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#ajaxResult A.homepage_2:hover, #ajaxResult A.subhomepage_2:hover, #ajaxResult A.ScaniaLink_2:hover, #ajaxResult A.wwwLink_2:hover,#ajaxResult A.channel_2:hover, #ajaxResult A.profile_2:hover, #ajaxResult A.largeprofile_2:hover, #ajaxResult A.org_2:hover, #ajaxResult A.sub_2:hover ,#ajaxResult A.News_2:hover, #ajaxResult A.rss_2:hover, #ajaxResult A.tag_2:hover{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+
+#ajaxResult A.homepage:active, #ajaxResult A.subhomepage:active, #ajaxResult A.ScaniaLink:active, #ajaxResult A.wwwLink:active, #ajaxResult A.channel:active, #ajaxResult A.org:active, #ajaxResult A.sub:active, #ajaxResult A.News:active, #ajaxResult A.rss:active, ajaxResult #ajaxObjects A.tag:active{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+#ajaxResult A.homepage_2:active, #ajaxResult A.subhomepage_2:active, #ajaxResult A.ScaniaLink_2:active, #ajaxResult A.wwwLink_2:active, #ajaxResult A.channel_2:active, #ajaxResult A.org_2:active, #ajaxResult A.sub_2:active, #ajaxResult A.News_2:active, #ajaxResult A.rss_2:active, #ajaxResult A.tag_2:active{ COLOR: #000; BACKGROUND-COLOR: #f8f0e4; TEXT-DECORATION: none ! important;}
+
+#ajaxResult A.largeprofile {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+#ajaxResult A.largeprofile_2 {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #fff; }
+
+#ajaxResult A.error {TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed;}
+
+#ajaxResult A.geoitem {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 2px; PADDING-BOTTOM: 2px; background-color: #ececed;}
+#ajaxResult A.geoitem_2 {TEXT-INDENT: 0px; PADDING-LEFT: 4px; PADDING-TOP: 2px; PADDING-BOTTOM: 2px; background-color: #fff;}
+
+#ajaxResult A.geoitem:hover, #ajaxResult A.geoitem:active {background-color: #fff;}
+
+
+#ajaxSuggestionResult A.profile {BACKGROUND: url(/images/profile.gif) no-repeat 10px 6px; TEXT-INDENT: 0px; PADDING-LEFT: 28px; PADDING-TOP: 4px; PADDING-BOTTOM: 4px; background-color: #ececed; font-size:69% ! important; font-weight:normal ! important;}

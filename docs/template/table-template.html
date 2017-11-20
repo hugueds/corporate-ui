@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>Lead Generator - Scania</title>
+
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+  
+    <!-- Table Sorter Plugin -->
+    <link href="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.9/css/theme.corporate-ui.css"
+    rel="stylesheet">
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.9/js/jquery.tablesorter.min.js"></script>
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.9/js/jquery.tablesorter.widgets.min.js"></script>
+    <!-- Tablesorter: optional -->
+    <link rel="stylesheet"
+    href="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.9/addons/pager/jquery.tablesorter.pager.css">
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.9/addons/pager/jquery.tablesorter.pager.js"></script>
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.9/addons/expandable/jquery.tablesorter.expandable.js"></script>
+
+    <script>
+        $(function () {
+            $("#table-ecolution").tablesorter({sortList: [[0, 0], [1, 0]]});
+        });
+    </script>
+
+
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+<body unresolved class="scania">
+
+  <c-corporate-header project="Corporate UI" site-name="Lead Generator"></c-corporate-header>
+
+  <c-main-content>
+
+    <c-main-navigation show-search>
+      <primary-items>
+        <nav-item location="#/">Ecolution Leads</nav-item>
+        <nav-item location="#/">Online Leads</nav-item>
+        <nav-item location="#/">About us</nav-item>
+      </primary-items>
+
+      <secondary-item>
+        <nav-item location="#/"><span class="icon-user"></span></nav-item>
+      </secondary-item>
+
+    </c-main-navigation>
+
+ 
+<section class="light">
+    <div class="col-md-12">
+       <h3 class="heading">Find Leads by Ecolution</h3>
+    <table id="table-ecolution" class="tablesorter">
+       <thead>
+            <tr>
+                <th>ECU</th>
+                <th>Fordonstid</th>
+                <th>Felkod</th>
+                <th>Antal</th>
+                <th class="filter-select filter-match" data-placeholder="">Status</th>
+                <th>Rubrik</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="7" class="ts-pager form-horizontal">
+                    <button type="button" class="btn-sm first"><i class="icon-step-backward"></i>
+                    </button>
+                    <button type="button" class="btn-sm prev"><i class="icon-arrow-left"></i></button>
+                    <span class="pagedisplay"></span>
+                    <!-- this can be any element, including an input -->
+                    <button type="button" class="btn-sm next"><i class="icon-arrow-right"></i></button>
+                    <button type="button" class="btn-sm last"><i class="icon-step-forward"></i>
+                    </button>
+                    <select class="pagesize input-mini" title="Select page size">
+                        <option selected="selected" value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                    </select><select class="pagenum input-mini" title="Select page number"></select>
+                </th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>ECM3O</td>
+                <td>2013-11-19 11:23</td>
+                <td>65444</td>
+                <td>7</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2012-06-21 16:51</td>
+                <td>11181</td>
+                <td>20</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2012-06-21 16:51</td>
+                <td>65443</td>
+                <td>39</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+            <tr>
+                <td>BCM3O</td>
+                <td>2012-06-21 16:51</td>
+                <td>65444</td>
+                <td>6</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2012-04-19 17:09</td>
+                <td>11181</td>
+                <td>9</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2012-04-19 17:09</td>
+                <td>65443</td>
+                <td>3</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2012-04-19 17:09</td>
+                <td>65444</td>
+                <td>7</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ACM3O</td>
+                <td>2011-12-13 13:38</td>
+                <td>11176</td>
+                <td>15</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-12-13 13:38</td>
+                <td>11181</td>
+                <td>21</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-12-13 13:38</td>
+                <td>65443</td>
+                <td>12</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-12-13 13:38</td>
+                <td>65444</td>
+                <td>11</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-10-29 10:37</td>
+                <td>4168</td>
+                <td>46</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Utsl&#228;pp av kv&#228;veoxider (NOx)</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-10-29 10:33</td>
+                <td>4168</td>
+                <td>11</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Utsl&#228;pp av kv&#228;veoxider (NOx)</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-08-15 08:08</td>
+                <td>135</td>
+                <td>8</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Matartryck</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-06-20 14:18</td>
+                <td>11176</td>
+                <td>22</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-04-29 09:15</td>
+                <td>11176</td>
+                <td>15</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-02-19 08:01:47</td>
+                <td>4116</td>
+                <td>11</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Lufttryck i SCR-systemet</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-02-11 16:32</td>
+                <td>11181</td>
+                <td>13</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-02-109 13:32</td>
+                <td>11182</td>
+                <td>1</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-02-01 12:32</td>
+                <td>65443</td>
+                <td>41</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2011-01-01 12:32</td>
+                <td>65444</td>
+                <td>17</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-11-06 08:08</td>
+                <td>275</td>
+                <td>16</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Laddlufttemperaturgivare</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-11-01 08:01</td>
+                <td>11181</td>
+                <td>3</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-10-30 12:08</td>
+                <td>11182</td>
+                <td>16</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Informationskod f&#246;r NOx-kontroll - ej raderbar</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-10-18 12:39</td>
+                <td>65443</td>
+                <td>9</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-07-19 11:33</td>
+                <td>65444</td>
+                <td>4</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-06-18 15:11</td>
+                <td>65444</td>
+                <td>6</td>
+                <td><i class="icon-bookmark text-warning"></i> Inaktiv</td>
+                <td>Felaktig hastighetsgivarsignal</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2010-04-16 17:05</td>
+                <td>275</td>
+                <td>11</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+            <tr>
+                <td>ECM3O</td>
+                <td>2009-11-14 15:22</td>
+                <td>65444</td>
+                <td>12</td>
+                <td><i class="icon-bookmark text-success"></i> Aktiv</td>
+                <td>Felaktig signal f&#246;r fordonshastighet</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="margin-top-xl" style="margin-top:60px">
+        <span class="label label-info">TIP!</span> Sort multiple columns simultaneously by holding
+        down the <kbd>Shift</kbd> key and clicking a second, third or even fourth. Using the provided sample data, start with "Status" to understand that functionality. 
+    </p>
+    <p>For tables, we are recomending the use of Tablesorter (used above).<br>
+    About Tablesorter: <a href="http://tablesorter.com/docs/">http://tablesorter.com/docs/</a><br>
+    Extensive documentation: <a href="https://mottie.github.io/tablesorter/docs/">https://mottie.github.io/tablesorter/docs/</a><br>
+    Please report bugs and issues to: <a href="mailto:corporate-ui@scania.com">corporate-ui@scania.com</a>.
+    </p>
+    </div>
+ </section>
+    
+  </c-main-content>
+
+  <c-corporate-footer></c-corporate-footer>
+
+  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>

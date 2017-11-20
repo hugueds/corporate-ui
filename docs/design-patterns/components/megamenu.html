@@ -1,0 +1,705 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Mega menu - Design Patterns</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" contnet="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Tooltips">
+        <meta property="og:description" content="">
+
+        <script src="https://static.scania.com/resources/logotype/favicon/favicons.js"></script>
+        
+
+
+        <!--[if lt IE 9]>
+            <script src="vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../styles/vendor.css" rel="stylesheet"/>
+        <link href="../styles/main.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://static.scania.com/ux-library/ux-lib.css">
+
+        <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>         
+
+        <link rel="stylesheet" type="text/css" href="https://static.scania.com/vendors/components/pure-js/highlight.js/styles/color-brewer.css">
+        <script src="https://static.scania.com/vendors/components/pure-js/highlight.js/highlight.pack.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    </head>
+    <body class="scania">
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <link href="../styles/main.css" rel="stylesheet"/>
+<c-main-content class="app">
+
+
+
+ 
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                    <li class="category">basics</li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/colors.html"> Colors </a>
+                                    </li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/grid.html"> Grid </a>
+                                    </li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/icons.html"> Icons </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/layouts.html"> Layouts </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/links.html"> Links </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/foundation/typography.html"> Typography </a>
+                                    </li>
+                                    <li class="category">elements</li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/alerts.html"> Alerts and notifications </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/breadcrumbs.html"> Breadcrumbs </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/buttons.html"> Buttons </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/collapsiblePanels.html"> Collapsible panels </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/dialogs.html"> Dialogs </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/formControls.html"> Form controls </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/forms.html"> Forms </a>
+                                    </li>
+                                     <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/labelsAndBadges.html"> Labels and badges </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/menus.html"> Menus </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/metadata.html"> Metadata </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/pagination.html"> Pagination </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/popovers.html"> Popovers </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/progressBars.html"> Progress and loading </a>
+                                    </li>
+                                
+                                             <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/stepIndicators.html"> Step indicators </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tables.html"> Tables </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tabs.html"> Tabs </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tags.html"> Tags </a>
+                                    </li>
+                                    <li  class="active"  >
+                                        <a  href="/pages/Scania/ux-library/design-patterns/components/tooltips.html"> Tooltips </a>
+                                    </li>
+                    
+                        
+                    
+                        
+                    
+                
+                    <li class="category">patterns</li>
+                    
+                        
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/cards.html"> Cards </a>
+                                    </li>
+                                
+                                             <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/dataFormats.html"> Data formats </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/fileUpload.html"> File upload </a>
+                                    </li>
+                                    <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/filters.html"> Filters </a>
+                                    </li>
+                                
+                                             <li>
+                                        <a  href="/pages/Scania/ux-library/design-patterns/patterns/help.html"> Help </a>
+                                    </li>
+
+                 
+            </ul>
+        </nav>
+        <section class="pl-content">
+            
+            <div class="pl-pattern">
+  <h3>Megamenu</h3>
+
+
+
+
+  <script type="text/javascript">
+    $(function() {
+      $(".dropdown").hover(function() {
+        $(this).addClass("open");
+        $(".dropdown-menu", this).first().stop(true, true).show();
+      }, function() {
+        $(this).removeClass("open");
+        $(".dropdown-menu", this).first().stop(true, true).hide();
+        $(this).removeClass("active");
+      });
+
+      $('.nav-tabs > li > a').hover(function(){
+        $(this).tab('show');
+        $(".navbar > .navbar-nav > li").removeClass("active");
+      }, function() {
+        $(".navbar > .navbar-nav > li").removeClass("active");
+      }).click(function(e) {
+        e.stopPropagation();
+      });
+    })
+  </script>
+  
+  <style type="text/css">
+    .bootstrap .navbar ul.nav.nav-tabs.nav-stacked {
+      border: 0;
+    }
+    .bootstrap .navbar ul.nav.nav-tabs.nav-stacked > li {
+      margin-bottom: -3px;
+      padding-bottom: 0;
+    }
+    .bootstrap .navbar ul.nav.nav-tabs.nav-stacked > li > a,
+    .bootstrap .navbar ul.nav.nav-tabs.nav-stacked > li.active > a {
+      top: 0;
+      border-bottom: 1px solid #ddd;
+      padding: 8px 15px;
+    }
+    .bootstrap .navbar ul.nav.nav-tabs.nav-stacked > li.active > a {
+      border-left: 2px solid #7c1c1d;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #ddd;
+      padding-left: 14px;
+    }
+    @media (min-width: 768px) {
+      .bootstrap .navbar > .container-fluid > .navbar-nav:first-child {
+        margin-left: -15px;
+      }
+    }
+
+
+    .bootstrap footer.panel {
+      border: 0;
+    }
+  </style>
+</head>
+<body unresolved class="bootstrap bootstrap-app">
+  <div class="container padding-top">
+    <header>
+      <nav class="navbar navbar-top">
+        <div class="navbar-header">
+          <button type="button" class="btn btn-default navbar-toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top-right">
+            <span class="icon-reorder"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span class="logotype"></span><span class="brand-name">Project Name</span>
+          </a>
+        </div>
+        <div class="navbar-collapse in" id="navbar-top-right">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <i class="icon-user"></i>
+                Andreas Wikström
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Settings
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-off"></i>
+                Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <nav class="navbar navbar-scania" role="navigation">
+        <div class="container-fluid bootstrap-wcm">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li class="dropdown megamenu">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Megamenu 
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="drop1">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Support</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Contact Form</a></li>
+                      <li><a data-description="A Short Description" href="#">Knowledgebase</a></li>
+                      <li><a data-description="A Short Description" href="#">Friendly Questions</a></li>
+                      <li><a data-description="A Short Description" href="#">Support Forum</a></li>
+                      <li><a data-description="A Short Description" href="#">Changelogs</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Marketplace</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">ThemeForest</a></li>
+                      <li><a data-description="A Short Description" href="#">CodeCanyon</a></li>
+                      <li><a data-description="A Short Description" href="#">GraphicRiver</a></li>
+                      <li><a data-description="A Short Description" href="#">VideoHive</a></li>
+                      <li><a data-description="A Short Description" href="#">ActiveDen</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Tuts+ Sites</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">PSD Tuts+</a></li>
+                      <li><a data-description="A Short Description" href="#">Code Tuts+</a></li>
+                      <li><a data-description="A Short Description" href="#">Vector Tuts+</a></li>
+                      <li><a data-description="A Short Description" href="#">App Tuts+</a></li>
+                      <li><a data-description="A Short Description" href="#">WP Tuts+</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Envato Sites</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Marketplaces</a></li>
+                      <li><a data-description="A Short Description" href="#">Microlancer</a></li>
+                      <li><a data-description="A Short Description" href="#">Creattica</a></li>
+                      <li><a data-description="A Short Description" href="#">AppStorm</a></li>
+                      <li><a data-description="A Short Description" href="#">Tutsplus</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Engage</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">We Build Envato</a></li>
+                      <li><a data-description="A Short Description" href="#">Flickr Stream</a></li>
+                      <li><a data-description="A Short Description" href="#">Youtube</a></li>
+                      <li><a data-description="A Short Description" href="#">Inside Envato</a></li>
+                      <li><a data-description="A Short Description" href="#">Vimeo Stream</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Social</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Google Plus</a></li>
+                      <li><a data-description="A Short Description" href="#">Facebook</a></li>
+                      <li><a data-description="A Short Description" href="#">Twitter</a></li>
+                      <li><a data-description="A Short Description" href="#">Linkedin</a></li>
+                      <li><a data-description="A Short Description" href="#">Pinterest</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="dropdown megamenu">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Tabs 
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu full" aria-labelledby="drop1">
+
+                <div class="row">
+                  <div class="col-sm-2">
+                    <ul class="nav nav-tabs nav-stacked">
+                      <li class="active">
+                        <a href="#home" role="tab" data-toggle="tab">
+                          Home 
+                          <i class="pull-right icon-caret-right"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#profile" role="tab" data-toggle="tab">
+                          Profile 
+                          <i class="pull-right icon-caret-right"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#messages" role="tab" data-toggle="tab">
+                          Messages 
+                          <i class="pull-right icon-caret-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-10 tab-content">
+                    <div id="home" class="tab-pane active">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <h4 class="title">
+                            <a href="#">Support</a>
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><a data-description="A Short Description" href="#">Contact Form</a></li>
+                            <li><a data-description="A Short Description" href="#">Knowledgebase</a></li>
+                            <li><a data-description="A Short Description" href="#">Friendly Questions</a></li>
+                            <li><a data-description="A Short Description" href="#">Support Forum</a></li>
+                            <li><a data-description="A Short Description" href="#">Changelogs</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-2">
+                          <h4 class="title">
+                            <a href="#">Marketplace</a>
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><a data-description="A Short Description" href="#">ThemeForest</a></li>
+                            <li><a data-description="A Short Description" href="#">CodeCanyon</a></li>
+                            <li><a data-description="A Short Description" href="#">GraphicRiver</a></li>
+                            <li><a data-description="A Short Description" href="#">VideoHive</a></li>
+                            <li><a data-description="A Short Description" href="#">ActiveDen</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="profile" class="tab-pane">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <h4 class="title">
+                            <a href="#">Tuts+ Sites</a>
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><a data-description="A Short Description" href="#">PSD Tuts+</a></li>
+                            <li><a data-description="A Short Description" href="#">Code Tuts+</a></li>
+                            <li><a data-description="A Short Description" href="#">Vector Tuts+</a></li>
+                            <li><a data-description="A Short Description" href="#">App Tuts+</a></li>
+                            <li><a data-description="A Short Description" href="#">WP Tuts+</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-2">
+                          <h4 class="title">
+                            <a href="#">Envato Sites</a>
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><a data-description="A Short Description" href="#">Marketplaces</a></li>
+                            <li><a data-description="A Short Description" href="#">Microlancer</a></li>
+                            <li><a data-description="A Short Description" href="#">Creattica</a></li>
+                            <li><a data-description="A Short Description" href="#">AppStorm</a></li>
+                            <li><a data-description="A Short Description" href="#">Tutsplus</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="messages" class="tab-pane">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <h4 class="title">
+                            <a href="#">Engage</a>
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><a data-description="A Short Description" href="#">We Build Envato</a></li>
+                            <li><a data-description="A Short Description" href="#">Flickr Stream</a></li>
+                            <li><a data-description="A Short Description" href="#">Youtube</a></li>
+                            <li><a data-description="A Short Description" href="#">Inside Envato</a></li>
+                            <li><a data-description="A Short Description" href="#">Vimeo Stream</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-2">
+                          <h4 class="title">
+                            <a href="#">Social</a>
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><a data-description="A Short Description" href="#">Google Plus</a></li>
+                            <li><a data-description="A Short Description" href="#">Facebook</a></li>
+                            <li><a data-description="A Short Description" href="#">Twitter</a></li>
+                            <li><a data-description="A Short Description" href="#">Linkedin</a></li>
+                            <li><a data-description="A Short Description" href="#">Pinterest</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+
+
+            <li class="dropdown megamenu">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Bus 
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu">
+                <div class="row">
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Schmitz Cargobull</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Lighting</a></li>
+                      <li><a data-description="A Short Description" href="#">Rear lamps</a></li>
+                      <li><a data-description="A Short Description" href="#">Side markers lamps</a></li>
+                      <li><a data-description="A Short Description" href="#">Position lamps</a></li>
+                      <li><a data-description="A Short Description" href="#">Number plate lights</a></li>
+                      <li><a data-description="A Short Description" href="#">Reverse Lights</a></li>
+                      <li><a data-description="A Short Description" href="#">Indicator Lights</a></li>
+                      <li><a data-description="A Short Description" href="#">Warning lights</a></li>
+                      <li><a data-description="A Short Description" href="#">Electricity</a></li>
+                      <li><a data-description="A Short Description" href="#">Work light</a></li>
+                      <li><a data-description="A Short Description" href="#">Other</a></li>
+                      <li><a data-description="A Short Description" href="#">Brake systems</a>
+                        <ul class="list-unstyled">
+                          <li><a data-description="A Short Description" href="#">Electronics</a></li>
+                          <li><a data-description="A Short Description" href="#">Valves</a></li>
+                          <li><a data-description="A Short Description" href="#">Air Treatment </a></li>
+                          <li><a data-description="A Short Description" href="#">Disc brakes</a></li>
+                          <li><a data-description="A Short Description" href="#">Brake Cylinders</a></li>
+                          <li><a data-description="A Short Description" href="#">Drum brakes</a></li>
+                          <li><a data-description="A Short Description" href="#">Electronic Brake Control</a></li>
+                        </ul>
+                      </li>
+                      <li><a data-description="A Short Description" href="#">Axle equipment</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Wabco</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Air Processing</a></li>
+                      <li><a data-description="A Short Description" href="#">Air Spring, Shock Absorber</a></li>
+                      <li><a data-description="A Short Description" href="#">Brake Actuator</a></li>
+                      <li><a data-description="A Short Description" href="#">Brake Control Trailer Other Product</a></li>
+                      <li><a data-description="A Short Description" href="#">Compressed Air Generating System</a></li>
+                      <li><a data-description="A Short Description" href="#">Compressed Air Storage</a></li>
+                      <li><a data-description="A Short Description" href="#">Control Devices Air Suspension</a></li>
+                      <li><a data-description="A Short Description" href="#">Conventional Brake Control</a></li>
+                      <li><a data-description="A Short Description" href="#">Conventional Service Brake</a></li>
+                      <li><a data-description="A Short Description" href="#">Devices for Buses</a></li>
+                      <li><a data-description="A Short Description" href="#">Devices for Universal Application</a></li>
+                      <li><a data-description="A Short Description" href="#">Drive Line Control</a></li>
+                      <li><a data-description="A Short Description" href="#">Electronic control of air suspension</a></li>
+                      <li><a data-description="A Short Description" href="#">Foundation Brake</a></li>
+                      <li><a data-description="A Short Description" href="#">Hydraulic Devices, HPB</a></li>
+                      <li><a data-description="A Short Description" href="#">Testing, Diagnosis</a></li>
+                      <li><a data-description="A Short Description" href="#">Tire Monitoring System</a></li>
+                      <li><a data-description="A Short Description" href="#">Trailer Connection</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Haldex</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">ABS System</a></li>
+                      <li><a data-description="A Short Description" href="#">Accessories</a></li>
+                      <li><a data-description="A Short Description" href="#">Actuation</a></li>
+                      <li><a data-description="A Short Description" href="#">Air brake</a></li>
+                      <li><a data-description="A Short Description" href="#">Air disc brakes</a></li>
+                      <li><a data-description="A Short Description" href="#">Air suspension / lift axle</a></li>
+                      <li><a data-description="A Short Description" href="#">Air treatment</a></li>
+                      <li><a data-description="A Short Description" href="#">Brake adjusters</a></li>
+                      <li><a data-description="A Short Description" href="#">EBS system</a></li>
+                      <li><a data-description="A Short Description" href="#">Hydraulics</a></li>
+                      <li><a data-description="A Short Description" href="#">Miscellaneous</a></li>
+                      <li><a data-description="A Short Description" href="#">Unclassified</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Gigant</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Axle components</a></li>
+                      <li><a data-description="A Short Description" href="#">Hubs and wheels</a></li>
+                      <li><a data-description="A Short Description" href="#">Brakes and pneumatic system</a></li>
+                      <li><a data-description="A Short Description" href="#">Suspension</a></li>
+                      <li><a data-description="A Short Description" href="#">Complementary equipment</a></li>
+                      <li><a data-description="A Short Description" href="#">Miscellaneous (Nuts, bolts, brackets etc)</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Knorr Bremse</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Electronics</a></li>
+                      <li><a data-description="A Short Description" href="#">Valves</a></li>
+                      <li><a data-description="A Short Description" href="#">Air Treatment</a></li>
+                      <li><a data-description="A Short Description" href="#">Disc brakes</a></li>
+                      <li><a data-description="A Short Description" href="#">Brake Cylinders</a></li>
+                      <li><a data-description="A Short Description" href="#">Drum brakes</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">SAF</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Axle components</a></li>
+                      <li><a data-description="A Short Description" href="#">Hubs and wheels</a></li>
+                      <li><a data-description="A Short Description" href="#">Brakes and pneumatic system</a></li>
+                      <li><a data-description="A Short Description" href="#">Suspension</a></li>
+                      <li><a data-description="A Short Description" href="#">Complementary equipment</a></li>
+                      <li><a data-description="A Short Description" href="#">Miscellaneous (Nuts, bolts, brackets etc)</a></li>
+                      <li><a data-description="A Short Description" href="#">Fifth wheel and related components</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Meritor</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Axle components</a></li>
+                      <li><a data-description="A Short Description" href="#">Hubs and wheels</a></li>
+                      <li><a data-description="A Short Description" href="#">Brakes and pneumatic system</a></li>
+                      <li><a data-description="A Short Description" href="#">Suspension</a></li>
+                      <li><a data-description="A Short Description" href="#">Complementary equipment</a></li>
+                      <li><a data-description="A Short Description" href="#">Miscellaneous (Nuts, bolts, brackets etc)</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">SKF</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">TQ-line trailer bearing</a></li>
+                      <li><a data-description="A Short Description" href="#">Standard trailer bearing</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">Complementary equipment</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Fuel Economy</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-3 col-md-2">
+                    <h4 class="title">
+                      <a href="#">BPW</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li><a data-description="A Short Description" href="#">Axle components</a></li>
+                      <li><a data-description="A Short Description" href="#">Hubs and wheels</a></li>
+                      <li><a data-description="A Short Description" href="#">Brakes and pneumatic system</a></li>
+                      <li><a data-description="A Short Description" href="#">Suspension</a></li>
+                      <li><a data-description="A Short Description" href="#">Complementary equipment</a></li>
+                      <li><a data-description="A Short Description" href="#">Miscellaneous (Nuts, bolts, brackets etc)</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Dropdown 
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a data-description="A Short Description" href="#">Contact Form</a></li>
+                <li><a data-description="A Short Description" href="#">Knowledgebase</a></li>
+                <li><a data-description="A Short Description" href="#">Friendly Questions</a></li>
+                <li><a data-description="A Short Description" href="#">Support Forum</a></li>
+                <li><a data-description="A Short Description" href="#">Changelogs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+</div>
+
+        </section>
+    </div>
+</c-main-content>
+
+        <script src="https://static.scania.com/ux-library/ux-lib.js"></script>
+        <script src="../scripts/vendor.js"></script>
+        <script src="../scripts/plugins.js"></script>        
+        <script src="../scripts/main.js"></script>
+
+    </body>
+</html>
+

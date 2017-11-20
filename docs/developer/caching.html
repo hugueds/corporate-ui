@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+  <title>UX Library - Developers</title>
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://static.scania.com/resources/fonts/scania-sans/scania-sans.css">  
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+<body unresolved class="scania">
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <c-main-content>
+
+    <c-main-navigation show-search>
+      <primary-items>
+        <nav-item location="/pages/Scania/ux-library/">Home</nav-item>
+        <nav-item location="/pages/Scania/ux-library/styleguide/">Style Guide</nav-item>            
+        <nav-item location="/pages/Scania/ux-library/developer/" class="active">Web Applications
+          <sub-navigation caption="Web Applications">
+            <nav-item location="/pages/Scania/ux-library/developer/">Corporate UI</nav-item>
+            <nav-item location="/pages/Scania/ux-library/component/">Available Components</nav-item>
+            <nav-item location="/pages/Scania/ux-library/template/">Templates</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/caching.html" class="active">Caching</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/scania-bootstrap.html">Scania Bootstrap</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/support.html">Support</nav-item>
+          </sub-navigation>
+        </nav-item>
+        <nav-item location="/pages/Scania/ux-library/mobile-apps/">Mobile Apps</nav-item>
+      </primary-items>
+    </c-main-navigation>
+
+    <section>
+      <article>
+        <div class="container">
+          <h1>Corporate UI caching strategies</h1>
+          <p>When it comes to the caching on an enterprise intranet it differs very much from caching for the commercial web. On an intranet we know for sure that a vast majority are recurring visitors. That's why we can tailor our structure in a way that users not very often need to download all the content of a certain page, rather than just loading the dynamic parts.</p>
+
+          <h2>Fonts, logos and framework files never expires</h2>
+          <p>We've setup the Corporate UI framework in a way so that static content are separated from dynamic in such a way that it, once downloaded, will remain in the end users local cache memory. This will not only give great benefits but it will also make traditional page speed reports out of order. The page speed reports are in our cases most often not applicable.</p>
+
+          <h2>All servers delivers the same content</h2>        
+          <p>Since most of the really heavy files like the Scania font files, Scania icon set and the Scania logotype package actually are the same ones for all our sites, why then force the user to download it again and again? If all our applications would place for example the Scania Sans symbol on their own servers we would not only create a bad situation for making updates to the logotype possible, we also would force our web browsers to believe that it is a different physical symbol for every time the URL for the symbol changes, even though changing only a sub domain name. Using our dedicated CDN servers, you will share URL with the rest of Scania and that will give you a 95% chance that your users will already have downloaded several megabytes of static content from other servers on Scania. As an example here you'll find the centrally stored wordmark that was already in your cache memory arriving at this page.
+            <xmp style="font-size: 18px">https://static.scania.com/resources/logotype/scania/scania-symbol.svg</xmp></p>
+
+            <h2>Preloading at the login page</h2>        
+            <p>Since most of our applications demands a log in procedure, we're already at those pages downloading some of our assets. It'll take the user a few seconds to conduct the log in, so at those places we know for sure that we'll have time to preload some generally used files. Therefore, it's important that you'll include your frameworks, libraries, logos, fonts etc. from our server stack at static.scania.com.</p>
+
+            <h2>static.scania.com</h2>
+            <p>With our CSS, JS, Images and font-files stored in data-centres all over the world, we can ensure the lowest possible response-times for our files. From here you'll get the fastest delivery of the <a href="//static.scania.com/vendors/" target="_blank">frameworks and libraries</a> that you'll need to inlculed. </p>
+
+            <h2>Optimization by using HTTP/2</h2>
+            <p>If you seriously need to improve your applications loading time we'd suggest that you'll enable HTTP/2 on your servers. This will make multiplexing possible and that could cut your loading time quite drastically. A demo of the technology can be found at <a href="https://http2.akamai.com/demo" target="_blank">Akamai</a> and a <a href="https://http2.github.io/faq/" target="_blank">HTTP/2 FAQ</a> is available as well.
+          </article>
+        </section>
+      </c-main-content>
+
+    </c-main-content>
+    <c-corporate-footer></c-corporate-footer>
+    <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+  </body>
+  </html>
+

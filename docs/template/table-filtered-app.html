@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>UAT</title>
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+<style>
+tbody th {font-family: 'Scania Sans Bold'}
+.tablesorter-filter-row {border:none;}
+</style>
+
+    <!-- Table Sorter Plugin -->
+
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.7/js/jquery.tablesorter.min.js"></script>
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.7/js/jquery.tablesorter.widgets.min.js"></script>
+    <!-- Tablesorter: optional -->
+    <link rel="stylesheet"
+    href="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.7/addons/pager/jquery.tablesorter.pager.css">
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.7/addons/pager/jquery.tablesorter.pager.js"></script>
+    <script src="https://static.scania.com/vendors/components/jQuery/table-sorter/2.17.7/addons/expandable/jquery.tablesorter.expandable.js"></script>
+
+    <script>
+        $(function () {
+            $("#table").tablesorter({sortList: [[0, 0], [1, 0]]});
+        });
+    </script>
+
+    <style>
+      tbody th {font-family: 'Scania Sans Bold'}
+      .tablesorter th, .tablesorter td {border:none !important;}
+    </style>    
+
+
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+<body unresolved class="scania app" style="opacity:0; margin: 80px"><section>
+  <h2>VRS Test Cycle</h2>
+  <p style="margin:20px 0 40px">User Acceptence test for testing and deploying VRS banners.</p>            
+  <table id="table" class="table tablesorter">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Business Team</th>
+        <th>Backend Team</th>
+        <th>Front End Team</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1st</th>
+        <td>Facts check</td>
+        <td>Sanity check</td>
+        <td>Sanity check</td>
+      </tr>
+      <tr>
+        <th>2nd</th>
+        <td>Spell check</td>
+        <td>Regression test light</td>
+        <td>Broken links</td>
+      </tr>      
+      <tr>
+        <th>3rd</th>
+        <td>Market specific information</td>
+        <td>Sample markets (Italy/Ireland)</td>
+        <td>Device and screen tests</td>
+      </tr>
+      <tr>
+        <th>4th</th>
+        <td>Slides & content</td>
+        <td>Performance test</td>
+        <td>Code Quality</td>
+      </tr>
+      <tr>
+        <th>5th</th>
+        <td>Internal & public versions</td>
+        <td>Internal and external access</td>
+        <td>Internal & public versions</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script>  
+
+    window.onload = function (){
+      document.querySelector("body").style.opacity = '1';
+    };
+
+    setTimeout(function(){ 
+      document.querySelector("body").style.opacity = '1'; 
+    },2000);
+
+</script>
+
+  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>
+</html>

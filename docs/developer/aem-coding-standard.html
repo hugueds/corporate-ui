@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>UX Library - ComOn Developers (AEM)</title>
+
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+
+  <link rel="stylesheet" type="text/css" href="https://static.scania.com/vendors/components/pure-js/highlight.js/styles/color-brewer.css">
+  <script src="https://static.scania.com/vendors/components/pure-js/highlight.js/highlight.pack.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+  <style>
+    code, kbd, pre, samp {font-family: 'Roboto Mono', monospace;font-size: 16px}
+  </style>
+ 
+    <script>
+    $(document).ready(function() {
+      $('pre code').each(function(i, e) {
+        var syntax = this.className;
+        $(this).html( hljs.highlight( syntax, $('pre code').html() ).value )
+        hljs.highlightBlock(e);
+      });
+    });
+    </script>
+
+</head>
+<body unresolved class="scania">
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+  <c-main-content>
+    <c-main-navigation show-search>
+          <primary-items>
+          <nav-item location="/pages/Scania/ux-library/">Home</nav-item>
+          <nav-item location="/pages/Scania/ux-library/styleguide/">Style Guide</nav-item>            
+          <nav-item location="/pages/Scania/ux-library/developer/" class="active">Web Applications
+          <sub-navigation caption="Web Applications">
+            <nav-item location="/pages/Scania/ux-library/developer/">Corporate UI</nav-item>
+            <nav-item location="/pages/Scania/ux-library/component/">Available Components</nav-item>
+            <nav-item location="/pages/Scania/ux-library/template/">Templates</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/caching.html">Caching</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/scania-bootstrap.html">Scania Bootstrap</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/aem-coding-standard.html">ComOn Developers</nav-item>   
+            <nav-item location="/pages/Scania/ux-library/developer/support.html">Support</nav-item>
+          </sub-navigation>
+        </nav-item>
+            <nav-item location="/pages/Scania/ux-library/mobile-apps/">Mobile Apps</nav-item>
+        </primary-items>
+      </primary-items>
+    </c-main-navigation>
+    <section>
+      <article>
+    <div class="container">
+        <h1>Coding Standard for AEM</h1>
+        <h3 style="margin-top: 0 !important">HTML & CSS for ComOn components</h3>
+        <p>Creating components for use in the AEM publishing system differs a bit from creating stand alone applications. Basically, most of the things an editor needs is already in place and all that needs to be done is to develop for the current component. That is done using basic web technologies as HTML, CSS and JavaScript.</p>
+
+        <h2>Corporate UI coding standard</h2>
+        <p>ComOn components apply the same coding standard as other projects at Scanai and you'll use parts of Scania's Corporate UI framework (HTML, CSS classes and UI Components) when doing your implementation. An overview of the Corporate UI () can be found here:
+        <ul>
+          <li><a href="/pages/Scania/ux-library/bootstrap/aem-developer-css.html">Scania Bootstrap HTML & CSS</a></li>
+          <li><a href="/pages/Scania/ux-library/bootstrap/aem-developer-components.html">Scania Bootstrap  UI Components</a></li>
+        </ul>  
+        </p>
+
+        <h2>The Hello World component</h2>
+        <p>To kickstart your learning, we'll have a look at the classic "Hello World" example. To develop any kind of component, you'll need to use a Bootstrap based wrapper as shown in the sample below.</p>
+
+      </article>
+
+        <pre><code class="html">
+    <section class="c-noe-component c-main-hero">
+      <div class="container-fluid">
+        <div class="container">
+          <h1>Hello World!</h1>
+          <h3>This is my first component...</h3>
+        </div>
+      </div>
+    </section>
+        </code></pre> 
+
+
+      <article>
+        <div class="container">
+        <h2>ComOn starter kit at GitHub</h2>
+        <p>Get all the templates and sample components from Scania's internal <a href="https://github.scania.com/AEM">GitHub repo for Adobe Experience Manager</a>.</p>
+      </article>
+
+
+
+      </section>
+    </c-main-content>
+    
+    <c-corporate-footer></c-corporate-footer>
+
+    <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>
+  </html>
+

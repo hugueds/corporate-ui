@@ -1,0 +1,210 @@
+<div class="container-fluid">
+    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+        <div class="list-group">
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+        <form>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>My profile</h3>
+                        <h4>Name and contact information</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="firstName" name="firstName" class="form-control" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="lastName" name="lastName" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="telephoneNumber" name="telephoneNumber" type="text" class="form-control" placeholder="Telephone number">
+                        </div>
+                    </div>
+                </div>   
+                <div class="row">
+                    <div class="col-md-12">
+
+            <h4>Change password</h4>
+            <div class="row">
+                
+                    <div class="col-md-6">
+
+
+                        <div class="form-group">
+                            <label for="inputCurrPwd" class="control-label" data-i18n="Scs_Core.DittLösenord">Your password</label>
+                            <div class="sc-max-length"><input type="password" class="form-control ng-valid-maxlength ng-touched" id="inputCurrPwd" ng-model="vm.password.current" name="pwdCurr" data-i18n-attr="{placeholder: 'Scs_Core.DittLösenord'}" invalid-class="has-warning" sc-max-length="" maxlength="50" placeholder="Your password" style=""><div class="pull-right control-label text-muted ng-scope">   <!-- ngIf: maxLength - bindModel.length === 0 -->   <!-- ngIf: bindModel.length < maxLength || !bindModel --><small ng-if="bindModel.length < maxLength || !bindModel" class="ng-binding ng-scope">       50   </small><!-- end ngIf: bindModel.length < maxLength || !bindModel --></div></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputNewPwd" class="control-label">
+                                <span data-i18n="Scs_Core.NyttLösenord" class="xs-mr-5">New password</span>
+                                <span class="fa fa-info-circle ng-scope" bs-tooltip="" data-title="The password must contain at least 8 characters. The password must not contain your user name, first name or surname. Nor must it contain simple words such as Scania, 12345 or abcd. The password must contain at least 3 of the following:1 lower-case letter , 1 numeral, 1 special character, 1 upper-case letter"></span>
+                            </label>
+                            <div class="sc-max-length"><input type="password" class="form-control ng-valid-maxlength" id="inputNewPwd" ng-model="vm.password.new" data-i18n-attr="{placeholder: 'Scs_Core.NyttLösenord'}" invalid-class="has-warning" sc-max-length="" maxlength="50" placeholder="New password"><div class="pull-right control-label text-muted ng-scope">   <!-- ngIf: maxLength - bindModel.length === 0 -->   <!-- ngIf: bindModel.length < maxLength || !bindModel --><small ng-if="bindModel.length < maxLength || !bindModel" class="ng-binding ng-scope">       50   </small><!-- end ngIf: bindModel.length < maxLength || !bindModel --></div></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputRepeatPwd" class="control-label" data-i18n="Scs_Core.UpprepaLösenord">Repeat password</label>
+                            <div class="sc-max-length"><input type="password" class="form-control ng-valid-maxlength ng-touched" id="inputRepeatPwd" ng-model="vm.password.repeated" data-i18n-attr="{placeholder: 'Scs_Core.UpprepaLösenord'}" invalid-class="has-warning" sc-max-length="" maxlength="50" placeholder="Repeat password" style=""><div class="pull-right control-label text-muted ng-scope">   <!-- ngIf: maxLength - bindModel.length === 0 -->   <!-- ngIf: bindModel.length < maxLength || !bindModel --><small ng-if="bindModel.length < maxLength || !bindModel" class="ng-binding ng-scope">       50   </small><!-- end ngIf: bindModel.length < maxLength || !bindModel --></div></div>
+                        </div>
+                </div>
+                <div class="col-md-12">
+                        <div class="form-group ng-hide" ng-show="vm.changePasswordSuccess">
+                            <div class="alert alert-success" data-i18n="Scs_Core.LösenordetHarSparats">The password has been saved</div>
+                        </div>
+
+                        <div class="form-group password-change alert alert-warning ng-hide" ng-show="vm.changePasswordSuccess === false">
+                            <p data-i18n="Scs_Core.LösenordetMåsteInnehållaMinst8Tecken_LösenordetFårInteInnehållaDittAnvändarnamn_">The password must contain at least 8 characters. The password must not contain your user name, first name or surname. Nor must it contain simple words such as Scania, 12345 or abcd. The password must contain at least 3 of the following:</p>
+                            <ul>
+                                <li data-i18n="Scs_Core._1Gemen">1 lower-case letter </li>
+                                <li data-i18n="Scs_Core._1Siffra">1 numeral</li>
+                                <li data-i18n="Scs_Core._1Specialtecken">1 special character</li>
+                                <li data-i18n="Scs_Core._1Versal">1 upper-case letter</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success pull-right" ng-disabled="vm.changePwdForm.$invalid" data-i18n="Scs_Core.ÄndraLösenord" ng-click="vm.changePassword()">Change password</button>
+                        </div>
+                </div>
+            
+
+            <h4>User settings</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Language</label>
+                        <select id="crud-staff-language-select" class="form-control ng-pristine ng-untouched ng-valid ng-isolate-scope" sc-single-select="" ng-model="vm.staff.language" ng-options="language.culture as language.nativeName for language in vm.supportedLanguages" data-placeholder="Language"><option ng-bind="options.placeholder" value="" class="ng-binding" selected="selected"></option><option value="string:cs-CZ" label="Cesky">Cesky</option><option value="string:da-DK" label="Dansk">Dansk</option><option value="string:de-DE" label="Deutsch">Deutsch</option><option value="string:et-EE" label="Eesti">Eesti</option><option value="string:en-GB" label="English" selected="selected">English</option><option value="string:es-ES" label="Español">Español</option><option value="string:fr-FR" label="Français">Français</option></select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Country</label>
+                        <select id="crud-staff-nationality-select" class="form-control ng-pristine ng-untouched ng-valid ng-isolate-scope" sc-single-select="" ng-model="vm.staff.nationality" ng-options="nationality.code as nationality.name for nationality in vm.nationalities" data-placeholder="Country"><option ng-bind="options.placeholder" value="" class="ng-binding" selected="selected"></option><option value="string:AF" label="Afghanistan">Afghanistan</option><option value="string:AX" label="Aland Islands">Aland Islands</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">
+                            <span data-i18n="Scs_Core.Enheter" class="xs-mr-5">Units</span>
+                            <span class="fa fa-info-circle ng-scope" bs-tooltip="" data-title="Select a unit in which to display fuel consumption and distance, for example."></span>
+                        </label>
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" ng-change="vm.unitChanged({units: vm.unitTypes.imperial, fuelConsumptionType: vm.fuelConsumptionTypes.distancePerFuel})" ng-model="vm.selectedUnitAndType" value="Imperial|Distance/Fuel" class="ng-valid ng-dirty ng-touched" name="7148" style="">
+                                <span></span>       
+                                <span data-i18n="Scs_Core.BrittiskaEnheter_Miles_Mpg_">Imperial units (miles, mpg)</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" ng-change="vm.unitChanged({units: vm.unitTypes.metric, fuelConsumptionType: vm.fuelConsumptionTypes.distancePerFuel})" ng-model="vm.selectedUnitAndType" value="Metric|Distance/Fuel" class="ng-pristine ng-untouched ng-valid" name="7149">
+                                <span></span>       
+                                <span data-i18n="Scs_Core.MetriskaEnheter_Km_Km_L_">Metric units (km, km/l)</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" ng-change="vm.unitChanged({units: vm.unitTypes.metric, fuelConsumptionType: vm.fuelConsumptionTypes.fuelPerDistance})" ng-model="vm.selectedUnitAndType" value="Metric|Fuel/Distance" class="ng-valid ng-dirty ng-valid-parse ng-touched" name="7150" style="">
+                                <span></span>       
+                                <span data-i18n="Scs_Core.MetriskaEnheter_Km_L_100Km_">Metric units (km, l/100 km)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">
+                            <span data-i18n="Scs_Core.Fordons_Id" class="xs-mr-5">Vehicle ID</span>
+                            <span class="fa fa-info-circle ng-scope" bs-tooltip="" data-title="The ID used to represent the equipment on the portal."></span>
+                        </label>
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" ng-model="vm.staff.vehicleIdentifier" ng-value="vm.vehicleIdentifiers.alias" class="ng-valid ng-dirty ng-touched ng-valid-parse" name="7153" value="Vehicle alias" style="">
+                                <span></span>       
+                                <span data-i18n="Scs_Core.Alias">Alias</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" ng-model="vm.staff.vehicleIdentifier" ng-value="vm.vehicleIdentifiers.registrationNumber" class="ng-valid ng-dirty ng-touched" name="7154" value="Registration number" style="">
+                                <span></span>       
+                                <span data-i18n="Scs_Core.Registreringsnummer">Registration number</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" ng-model="vm.staff.vehicleIdentifier" ng-value="vm.vehicleIdentifiers.chassisNumber" class="ng-valid ng-dirty ng-touched" name="7155" value="Chassi number" style="">
+                                <span></span>       
+                                <span data-i18n="Scs_Core.Chassinummer">Chassis serial number</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </widget-content>
+                            </div><!-- end ngRepeat: view in vm.views | orderBy: 'order' --><div ng-repeat="view in vm.views | orderBy: 'order'" class="xs-pb-10 ng-scope">
+                                <widget-content widget="view" locals="view.locals" ctrl-loaded="vm.controllerLoaded" class="ng-isolate-scope"><div class="loading-container ng-isolate-scope" is-loading="isLoading" failed="failed" long-request="longRequest">
+        <!-- ngIf: vm.longRequest -->
+        <!-- ngIf: vm.isLoading && !vm.failed -->
+
+        <!-- ngIf: !vm.isLoading && !vm.failed && !vm.noContent --><div ng-transclude="" ng-if="!vm.isLoading &amp;&amp; !vm.failed &amp;&amp; !vm.noContent" class="is-loading-content ng-scope"></div><!-- end ngIf: !vm.isLoading && !vm.failed && !vm.noContent -->
+
+        <!-- ngIf: vm.failed -->
+
+        <!-- ngIf: vm.noContent -->
+    </div><div class="panel panel-default ng-scope">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6" if="vm.profile.roles.length > 0">
+                    <div class="form-group">
+                        <h4 data-i18n="Scs_Core.Roll">Role</h4>
+                        <ul class="list-unstyled">
+                            <!-- ngRepeat: role in vm.profile.roles track by role --><li ng-repeat="role in vm.profile.roles track by role" ng-bind="role | translateRole" class="ng-binding ng-scope">Super user</li><!-- end ngRepeat: role in vm.profile.roles track by role --><li ng-repeat="role in vm.profile.roles track by role" ng-bind="role | translateRole" class="ng-binding ng-scope">Office staff</li><!-- end ngRepeat: role in vm.profile.roles track by role --><li ng-repeat="role in vm.profile.roles track by role" ng-bind="role | translateRole" class="ng-binding ng-scope">Service manager</li><!-- end ngRepeat: role in vm.profile.roles track by role -->
+                        </ul>
+                    </div>    
+                </div>
+                <div class="col-md-6" if="vm.selectedGroups.length > 0">
+                    <div class="form-group">
+                        <h4 data-i18n="Scs_Core.Grupp">Group</h4>
+                        <ul class="list-unstyled">
+                            <!-- ngRepeat: group in vm.selectedGroups -->
+                        </ul>
+                    </div>    
+                </div>
+
+                            </div><!-- end ngRepeat: view in vm.views | orderBy: 'order' -->
+                        </div>
+
+                        <div class="row xs-mt-10">
+                            <div class="col-md-12">
+                                <button class="btn btn-success" data-i18n="Scs_Core.Spara" ng-click="vm.saveClick()" ng-disabled="vm.isSaving">Save</button>
+                                <button class="btn btn-default" data-i18n="Scs_Core.Avbryt" ng-click="vm.cancel()">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+    </div>
+    </div>      
+    </div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The UX Timeline</title>
+    <meta charset="utf-8">
+    <meta name="description" content="The UX Journey">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <script src="https://static.scania.com/vendors/frameworks/jQuery/1.11.3/jquery-1.11.3.min.js"></script> 
+    <!--FONT-->
+    <link rel="stylesheet" href="https://static.scania.com/vendors/components/pure-js/timeline.js/ver.2017-03-31-15-29-59/compiled/css/fonts/font.default.css?v1">
+
+    <script src="https://static.scania.com/vendors/frameworks/jQuery/1.11.3/jquery-1.11.3.min.js"></script>  
+
+    <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js?css=custom"></script>
+
+    <link rel="stylesheet" href="https://static.scania.com/vendors/components/pure-js/timeline.js/ver.2017-03-31-15-29-59/compiled/css/timeline.css">
+
+
+
+    <!-- Style-->
+    <style>
+      html, body {
+      	height:100%;
+      	width:100%;
+      	padding: 0px;
+      	margin: 0px;
+      }
+      .tl-timeline {
+      
+      }
+      
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+  </head>
+  <body style="opacity:0">
+
+  <c-corporate-header site-name="UX Library" site-url="http://corporate-ui.com/ux-library/">
+    <nav-item location="http://corporate-ui.com">Corporate UI</nav-item>
+  </c-corporate-header>
+
+
+    <div id="timeline"></div>
+    <!-- JavaScript-->
+    <script src="https://static.scania.com/vendors/components/pure-js/timeline.js/ver.2017-03-31-15-29-59/compiled/js/timeline.js"></script>
+    
+    <script>
+
+      var options = {
+    hash_bookmark: false,
+    initial_zoom: 1,
+    align: "left",
+    timenav_position: "top"
+  }
+  var timeline = new TL.Timeline('timeline',
+                                 'https://rawgit.com/corporate-ui/translations/master/de/ux-timeline.json',
+                                 options);
+
+    </script>
+    <script src="https://static.scania.com/resources/brands/js/apply-brand.js"></script>
+  </body>
+</html>
+

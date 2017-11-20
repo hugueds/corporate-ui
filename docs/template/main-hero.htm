@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Scania UX Library</title>
+
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+  <link rel="import" href="https://static.scania.com/build/global/2.0.0/html/component/Navigation/main-hero/main-hero.html">
+  
+</head>
+<body unresolved class="scania ux-lib">
+
+  <c-corporate-header site-name="UX Library">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <c-main-content class="light">
+
+    <c-main-navigation show-search>
+      <primary-items>
+        <nav-item location="#/">solutions</nav-item>
+        <nav-item location="#/branding">products and services</nav-item>
+        <nav-item location="#/contact">experience scania
+          <sub-navigation>
+            <nav-item location="#/news">news</nav-item>
+            <nav-item location="#/popular">popular</nav-item>
+            <nav-item location="#/related">related</nav-item>
+          </sub-navigation>
+        </nav-item>
+      </primary-items>
+    </c-main-navigation>
+
+
+
+    <section>
+      <c-main-hero image="https://static.scania.com/resources/images/demo/template-cover.png"></c-main-hero>
+    </section>
+    
+    
+  </c-main-content>
+
+  <c-corporate-footer></c-corporate-footer>
+
+</body>

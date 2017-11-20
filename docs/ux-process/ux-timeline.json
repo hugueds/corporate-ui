@@ -1,0 +1,263 @@
+{
+    "events": [
+        {
+            "start_date": {
+                "year":         "2017",
+                "month":        "09",
+                "day":          "15",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2018",
+                "month":        "01",
+                "day":          "07",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "background": {
+                "color": "#999999",
+                "opacity": 50,
+                "url": null
+            },
+            "media": {
+                "caption": "Driving Simulator",
+                "url": "https://screenshots.en.sftcdn.net/en/scrn/3346000/3346318/scania-truck-driving-simulator-14-700x394.jpg"
+            },
+            "text": {
+                "headline": "Sprint Zero - The UX Journey",
+                "text": "As we do user journeys, prototyping and simulations when we are devloping producuts like cars and trucks, in the same manor it should be applied to the software that we are producing."
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "2017",
+                "month":        "09",
+                "day":          "16",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2017",
+                "month":        "10",
+                "day":          "28",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "Interview",
+                "credit": "",
+                "url": "https://cdn-images-1.medium.com/max/800/1*2hcwYao1I2Ltlt__NV30Rw.jpeg"
+            },
+            "text": {
+                "headline": "Discover",
+                "text": "Business priorities often lack the reality of user needs and decisions are made based on what we \"think\" is needed rather than what is \"truly\" needed.\nUX has strategic aspects that involve a deep understanding of the business, the users, and context in which they operate."
+            },
+            "unique_id": ""
+        },
+        {
+            "start_date": {
+                "year":         "2017",
+                "month":        "10",
+                "day":          "22",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2017",
+                "month":        "11",
+                "day":          "12",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "User Scenario",
+                "credit": "",
+                "url": "https://i1.wp.com/theuxreview.co.uk/wp-content/uploads/2013/03/legowheel.png?resize=1024%2C768"
+            },
+            "text": {
+                "headline": "Ideate",
+                "text": "There is a solution for every problem, but no problem could be solved if you don’t know what the problem is?\nA \"Well Defined & Figured Out Problem Gets Solved Far Easily\". Hence, it is absolutely essential to ideate before going into finer details of designing a product or service."
+            },
+            "unique_id": ""
+        },
+        {
+            "start_date": {
+                "year":         "2017",
+                "month":        "11",
+                "day":          "10",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2017",
+                "month":        "11",
+                "day":          "24",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "Whiteboarding",
+                "credit": null,
+                "url": "https://valant.com/wp-content/uploads/2016/03/business-plan-images.png"
+            },
+            "text": {
+                "headline": "Plan",
+                "text": "User experience is not a siloed practice. To collect knowledge and generate solutions, it’s best to bring people together.\nTo plan and prioritize users, use cases and features that should to be supported by the solution is essential in order to create an integrated and unified user experience — let alone a consistent omnichannel design."
+            },
+            "unique_id": ""
+        },
+        {
+            "start_date": {
+                "year":         "2017",
+                "month":        "11",
+                "day":          "23",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2017",
+                "month":        "12",
+                "day":          "07",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "Wireframes",
+                "credit": null,
+                "url": "https://17404-presscdn-0-71-pagely.netdna-ssl.com/studio/wp-content/uploads/2014/04/UXPin-.png"
+            },
+            "text": {
+                "headline": "Define",
+                "text": "While skipping prototyping might save some time during design, that surplus can be lost many times over in development. If we test-drive our trucks before we launch them, then it only makes sense to test our designs interactively before they go into development.\nWhen we define our ideas and solutions in protototypes it´s easy to validate with users and foster a shared vision."
+            },
+            "unique_id": ""
+        },
+        {
+            "start_date": {
+                "year":         "2017",
+                "month":        "12",
+                "day":          "07",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2017",
+                "month":        "12",
+                "day":          "19",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "Usablity Testing",
+                "credit": null,
+                "url": "https://static1.squarespace.com/static/5255a756e4b00554214b8c18/t/5693e996a2bab86addd2d382/1402458211613/Centralis-842+edit.jpg?format=1500w"
+            },
+            "text": {
+                "headline": "Test",
+                "text": "You can’t fix something if you don’t know that it’s broken. Companies and agencies that foster a culture of testing can identify what is broken or not working at its best, and develop fixes centered around those results.\nUsability testing is helpful because it focuses on actual behavioral patterns and design solutions as opposed to solely relying on the assumptions and prescribed solutions by business."
+            },
+            "unique_id": ""
+        },
+        {
+            "start_date": {
+                "year":         "2018",
+                "month":        "01",
+                "day":          "07",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2018",
+                "month":        "01",
+                "day":          "07",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "Handover",
+                "credit": null,
+                "url": "http://www.techsciart.com/wp-content/uploads/2017/02/IT-Consulting.jpg"
+            },
+            "text": {
+                "headline": "Initial Handover to Development",
+                "text": "UX is key for complex applications because users must be able to understand how to use it but also find value in using it. Neglecting UX often result in frustrated users, time consuming and seldom used applications. Hence, it is absolutely essential to validate our assumptions, ideas and insights before going into sprint start instead of wasting tons of resources and money."
+            },
+            "unique_id": ""
+        },
+        {
+            "start_date": {
+                "year":         "2018",
+                "month":        "01",
+                "day":          "08",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "end_date": {
+                "year":         "2018",
+                "month":        "01",
+                "day":          "26",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption": "Development Starts",
+                "credit": null,
+                "url": "http://www.connectioncafe.com/wp-content/uploads/2017/02/Screenshot_19.png"
+            },
+            "text": {
+                "headline": "Iterative Sprints Begin - Sprint 1",
+                "text": "Be sure to bring UX specialists and designers onto your team from the very beginning so they can help establish and test the big picture vision for the product, and help keep the team’s eye on this vision as the project unfolds.\nBringing UX specialists onto your team early helps the team work together in setting up work processes that maximize collaboration and efficiency between the testers, designers, and developers. "
+            },
+            "unique_id": ""
+        }
+    ]
+}

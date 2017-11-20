@@ -1,0 +1,181 @@
+<html lang="en-GB" class="corporate-ui">
+
+<head>
+	<title>UX LIBRARY - Polymer Documentation</title>
+
+	<script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+	<link rel="import" href="https://static.scania.com/build/global/beta2/html/Navigation/main-hero/main-hero.html">
+
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+
+<style>
+	body {
+		font-family: 'Scania Sans';
+	}
+	h2 {
+		margin-bottom:50px;
+	}
+	p {
+		font-size: 1em;
+	}
+	.row {
+		margin-bottom: 20px;
+		margin-top:20px;
+	}
+	.warning {
+		color:#9E2B22;
+	}
+	.demo {
+		color:#458744;
+	}
+	.codeblock {
+		color:#418BCA;
+	}
+	.hljs {
+		background-color: transparent !important;
+	}
+	.vcenter {
+    	display: inline-block;
+    	vertical-align: middle;
+    	float: none;
+	}
+	.panel {
+		border:1px solid #ccc;
+	}
+	.panel.dark {
+		background-color: #f5f5f5;
+	}
+	pre .left-arrow {
+		position: absolute;
+    	display: block;
+    	width: 0;
+    	height: 0;
+    	border-color: transparent;
+    	border-style: solid;
+    	top: 50%;
+    	left: -6px;
+   		margin-top: -20px;
+   		border-right-color: rgba(0,0,0,.25);
+   		border-left-width: 0;
+   		border-width: 11px;
+	}
+	pre .left-arrow::after {
+		position: absolute;
+    	display: block;
+    	width: 0;
+    	height: 0;
+    	border-color: transparent;
+    	border-style: solid;
+    	border-width: 10px;
+    	bottom: -10px;
+    	left: 1px;
+    	content: " ";
+    	border-right-color: #f5f5f5;
+    	border-left-width: 0;
+	}
+	pre .right-arrow {
+		position: absolute;
+    	display: block;
+    	width: 0;
+    	height: 0;
+    	border-color: transparent;
+    	border-style: solid;
+    	top: 50%;
+    	right: -6px;
+   		margin-top: -20px;
+   		border-left-color: rgba(0,0,0,.25);
+   		border-right-width: 0;
+   		border-width: 11px;
+	}
+	pre .right-arrow::after {
+		position: absolute;
+    	display: block;
+    	width: 0;
+    	height: 0;
+    	border-color: transparent;
+    	border-style: solid;
+    	border-width: 10px;
+    	bottom: -10px;
+    	right: 1px;
+    	content: " ";
+    	border-left-color: #f5f5f5;
+    	border-right-width: 0;
+	}
+	ul {
+		list-style-type: none;
+	}
+
+	code {
+          color:#555555;
+          background-color: #f5f5f5;
+        }
+</style>
+
+<body unresolved class="bootstrap scania">
+
+	<corporate-header project="Corporate UI" site-name="Polymer Documentation">
+
+	</corporate-header>
+
+	<c-main-content>
+		<main-hero image="res/herohalf.png">
+			<h1>Polymer documentation</h1>
+		</main-hero>
+		<section>
+			<div class="container">
+				<h2 class="text-center"><i class="icon-file-text"></i> Structure</h2>
+
+				<p>The UX Library is able to dynamically pull and render all Polymer-components under <samp>/development/global/html</samp>.</p>
+
+				<p>The documentation uses <code>&lt;hydrolysis-analyzer&gt;</code> for analyzing the polymer-components. In additions to the analyzer, five elements are used to display the documentation in the UX Library:</p>
+				<ul>
+					<li><code>&lt;scania-doc&gt;</code>
+						<ul>
+							<li><code>&lt;iron-doc-viewer&gt;</code>
+								<ul>
+									<li><code>&lt;iron-doc-property&gt;</code></li>
+									<li><code>&lt;demo-component&gt;</code></li>
+									<li><code>&lt;marked-element&gt;</code></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p>The analyzer and the marked-element is unmodified tools from the polymer-catalog. The iron-components are heavily modified versions from the polymer-catalog. <code>&lt;scania-doc&gt;</code> is called in <samp>component.html?t=Category&c=Component</samp>. The url-parameters is used to generate the URL to the file to be analyzed.</p>
+
+				<p class="text-danger text-center">This setup makes some assumptions about the component and has some limitations.<p>
+
+				<p>Given a url to a file to analyze, it will analyze any and all Polymer-components it finds in the file - including all HTMLImports. All of these will be displayed in the UX Library. <span class="text-danger">This becomes a potential problem when there are interdependancies!</span> The <code>&lt;hero-carousel&gt;</code>, for example, imports <code>&lt;main-hero&gt;</code> and thus the main-hero will also be analyzed. This behaivour isn't necessarily wanted.</p>
+
+				<p>The UX Library and <code>&lt;scania-doc&gt;</code> assumes a certain structure to each component. The UX-Library counts the number of variations of each component by counting the number of files - 1 (accounting for the main component). Files not reletated to a variations should thus be hidden in a subfolder.</p>
+
+				<p><code>&lt;scania-doc&gt;</code> assumes that the <code>folder-name <i class="icon-long-arrow-right"></i> file-name <i class="icon-long-arrow-right"></i> main-component-name</code> are all the same when it sorts the result from the analyzer. If a component-name matches the folder & file-name it will be displayed first. Any components with names inlcuding <code>variation</code> comes next, in ascending order. Any other component shows without sorting at the bottom.</p>
+
+				<p>The main-component, or the one showing first, have an API-Reference attached to it. This lists all public properties and methods, including the preceding comment, of the main-component. See the <a href="https://www.polymer-project.org/1.0/docs/tools/documentation#properties">polymer documentation</a> for how to annotate type of params and returns. Private properties/methods should be named with an underscore: _someMethod.</p>
+
+				<h2 class="text-center"><i class="icon-code"></i> Documentation</h2>
+
+				<p>Place the documentation directly preceding the <code>&lt;dom-module&gt;</code> as an HTML-comment of each component. Do not place an comment before the Polymer-call in the <code>&lt;script&gt;</code>-tag as this will override the earlier comment-block. <span class="text-danger">Make sure every component has a comment-block, albeit empty. If not, the analyzer will inherit the comment-block of the component preceding it, creating duplicates.</span></p>
+
+				<p>Place all documentation you want hidden from the UX Library after an <code>@dev</code>-tag. Anything written after this tag won't be rendered.</p>
+
+				<p><code>&lt;iron-doc-viewer&gt;</code> uses <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown</a> to render the documentation in the UX Library. If you want to show a demo, put the demo-code inside a <code>&lt;demo&gt;&lt;/demo&gt;</code>-block. This will render the demo in a full-width container with the code in a accordion-style container following it, should the user want the code.</p>
+
+				<p class="text-center"><strong>Cases</strong></p>
+				<dl class="dl-horizontal">
+					<dt>Several demos</dt>
+					<dd>Seperate the documentation with three underscores. Each created "block" can contain one demo (<code>&lt;iron-doc-viewer&gt;</code> will only render one demo per block).</dd>
+					<dt>No variations</dt>
+					<dd>Place the main descriptor (one without demos) in the first "block" before any seperator (the three underscores). Place demos after seperator.</dd>
+				</dl>
+			</div>
+		</section>
+	</main-content>
+
+	<corporate-footer></corporate-footer>
+
+	  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>
+
+</html>

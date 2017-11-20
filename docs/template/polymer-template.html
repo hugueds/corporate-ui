@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>What's Cooking | Scania.Com</title>
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+
+  <script>
+    $(function() {
+      $("nav-item").click(function() {
+        $("nav-item").removeClass("active");
+        $("c-main-content > section").css('padding-top','90px')
+        $(this).addClass("active");
+      });
+  });
+  </script>
+
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+
+<body unresolved class="scania">
+    
+  <c-corporate-header site-name="What's Cooking?">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+    
+  <c-main-content>
+
+    <c-main-navigation>
+      <primary-items>
+        <nav-item location="#">
+          Nyheter
+          <sub-navigation caption="Nyheter">
+            <nav-item location="http://www.aftonbladet.se">Aftonbladet</nav-item>
+            <nav-item location="http://www.dn.se">DN</nav-item>
+            <nav-item location="http://www.expressen.se">Expressen</nav-item>
+            <nav-item location="http://www.svd.se">SvD</nav-item>
+          </sub-navigation>
+        </nav-item>
+        <nav-item location="#">
+          Matlagning
+          <sub-navigation caption="Templates">
+            <nav-item location="http://www.mittkok.se">Mitt Kök</nav-item>
+            <nav-item location="http://www.svd.se">DN</nav-item>
+            <nav-item location="http://www.svd.se">Expressen</nav-item>
+            <nav-item location="http://www.svd.se">SvD</nav-item>
+          </sub-navigation>
+        </nav-item>        
+      </primary-items>
+
+      <secondary-items>
+        <nav-item class="visible-xs-inline-block visible-sm-inline-block" location="https://www.scania.com/group/en">
+          <span class="icon-user"></span> 
+          <span>Scania group</span>
+        </nav-item>
+      </secondary-items>
+    </c-main-navigation>
+
+    <section class="light">
+      <div class="container">
+          <h2 style="padding: 0 10%;">Corporate UI</h2>
+          <p style="padding: 0 10%;">To run the web components from Scania's central servers, you'll need to enable CORS on your servers: <a href="http://enable-cors.org/server.html" target="_blank">enable-cors.org/server.html</a></p>
+        </div>
+      </div>
+    </section>
+
+  </c-main-content>
+
+  <c-corporate-footer>
+    <c-social-share>
+      <c-social-media name="facebook" link="https://www.facebook.com/search/top/?q=%23scania"></c-social-media>
+      <c-social-media name="twitter" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="linkedin" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="instagram" link="https://www.instagram.com/explore/tags/scania/"></c-social-media>
+      <c-social-media name="vk" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="weibo" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+    </c-social-share>
+
+    <nav-item location="#">privacy policy</nav-item>
+    <nav-item location="#">terms &amp; conditions</nav-item>
+    <nav-item location="#">cookies</nav-item>
+    <nav-item location="#">site map</nav-item>
+    <nav-item location="#">contact us</nav-item>
+    <nav-item location="#">accessibility</nav-item>
+  </c-corporate-footer>
+
+  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>
+</html>

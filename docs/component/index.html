@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--#include file="../config.aspx" -->
+<html lang="en-GB">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html">
+  </noscript>
+
+  <title>Scania UX Library</title>
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+
+  <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Navigation/main-hero/main-hero.html">
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+
+
+<body unresolved class="scania ux-lib" ng-app="CorporateUI" ng-controller="Components as components">
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item>
+      <select class="form-control input-sm hidden">
+        <option selected>2.0.0</option>
+        <option>beta2</option>
+        <option>development</option>
+      </select>
+    </nav-item>
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <c-main-content>
+
+    <c-main-navigation show-search>
+      <primary-items>
+        <nav-item location="/pages/Scania/ux-library/">Home</nav-item>
+        <nav-item location="/pages/Scania/ux-library/styleguide/">Style Guide</nav-item>
+        <nav-item location="/pages/Scania/ux-library/developer/" class="active">
+          Web Applications
+          <sub-navigation caption="Web Applications">
+            <nav-item location="/pages/Scania/ux-library/developer/">Corporate UI</nav-item>
+            <nav-item location="/pages/Scania/ux-library/component/" class="active">Available Components</nav-item>
+            <nav-item location="/pages/Scania/ux-library/template/">Templates</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/caching.html">Caching</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/scania-bootstrap.html">Scania Bootstrap</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/support.html">Support</nav-item>
+          </sub-navigation>
+        </nav-item>
+        <nav-item location="/pages/Scania/ux-library/mobile-apps/">Mobile Apps</nav-item>        
+      </primary-items>
+    </c-main-navigation>
+
+
+<style>
+  .components-iframe iframe {
+    width: 100%;
+    height: 2600px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+</style>
+
+    <section class="light">
+      <div class="wrapper">
+        <div class="components-iframe">
+            <iframe src="https://static.scania.com/ux-library/component/iframe.aspx" onload="scroll(0,0);" frameborder="0" allowfullscreen ></iframe>
+        </div>
+      </div>
+    </section>
+
+  </c-main-content>
+
+  <c-corporate-footer></c-corporate-footer>
+
+  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+
+   <script src="//static.scania.com/vendors/frameworks/angular/1.5.5/angular.min.js"></script>
+</body>
+</html>
+
+
+  

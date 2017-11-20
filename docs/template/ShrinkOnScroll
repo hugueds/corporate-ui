@@ -1,0 +1,20 @@
+
+För att krympa huvudnavigeringen vid scroll
+
+.scania-noe .c-mainNavigation .c-master-header-secondary-links li.c-master-header-links a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scania-noe .c-mainNavigation .c-master-header-secondary-links li.c-master-header-search-icon {
+	height: 52px;
+}
+
+.scania-noe .c-master-header .c-master-header--logo {
+    width: 37px;
+    height: 35px;
+}
+
+.scania-noe .c-mainNavigation .c-primaryNavigation {
+    top: 52px;
+}

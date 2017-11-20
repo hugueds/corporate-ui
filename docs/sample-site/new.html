@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="utf-8">
+    <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+    <title>Scania UX Library - Sample Site</title>
+
+    <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+    <script src="https://static.scania.com/vendors/components/pure-js/js-cookie/2.1.4/js/js.cookie.js"></script>
+
+  </head>
+
+  <body class="scania">
+    <c-corporate-header site-name="Sample Site" site-url="index.html">
+      <nav-item location="https://scania.com/ux-library/">UX Library</nav-item>
+      <nav-item location="../index.html">Log out</nav-item>
+    </c-corporate-header>
+
+    <c-main-content>
+       <c-main-navigation show-search>
+      <primary-items>
+          <nav-item location="home.html">Start
+            <sub-navigation caption="Start">
+              <nav-item location="#" class="active">News</nav-item>
+              <nav-item location="#">Settings</nav-item>
+              <nav-item location="#">Services</nav-item>
+            </sub-navigation>
+          </nav-item>
+          <nav-item location="fleet-position.html" class="active">Fleet position
+            <sub-navigation caption="Fleet position">
+              <nav-item location="#" class="active">Map</nav-item>
+              <nav-item location="#">Vehicles</nav-item>
+              <nav-item location="#">Events</nav-item>
+              <nav-item location="#">Service activities</nav-item>
+              <nav-item location="#">More <i class="icon-caret-down"></i></nav-item>
+            </sub-navigation>
+          </nav-item>            
+          <nav-item location="service-planning.html">Service planning
+            <sub-navigation caption="Service planning">
+              <nav-item location="to-do.html" class="active">To do</nav-item>
+              <nav-item location="calendar.html">Calendar</nav-item>
+              <nav-item location="defect-reports.html">Defect reports</nav-item>
+              <nav-item location="service-activities.html">Service activities</nav-item>
+              <nav-item location="workshop-history.html">Workshop history</nav-item>
+            </sub-navigation>
+          </nav-item>  
+          <nav-item location="driver-evaluation.html" class="hidden-md">Driver evaluation
+            <sub-navigation caption="Driver evaluation">
+              <nav-item location="result.html">Result</nav-item>
+              <nav-item location="fuel-consumption.html">Fuel consumption</nav-item>
+              <nav-item location="driver-data.html">Driver data</nav-item>
+            </sub-navigation>
+          </nav-item>
+          <nav-item location="vehicle-performance.html" class="hidden-xl hidden-xl">Vehicle performance
+            <sub-navigation caption="Vehicle performance">
+              <nav-item location="overview.html" class="active">Overview</nav-item>
+              <nav-item location="details.html">Details</nav-item>
+              <nav-item location="compare.html">Compare</nav-item>
+              <nav-item location="environmental-report.html">Environmental report</nav-item>
+              <nav-item location="fuel-report.html">Fuel report</nav-item>
+            </sub-navigation>         
+          </nav-item>   
+          <nav-item location="more.html" class="pull-right">More <i class="icon-caret-down"></i></nav-item>
+      </primary-items>
+      <secondary-items>
+
+      </secondary-items>      
+    </c-main-navigation>
+
+
+
+    <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Navigation/main-hero/main-hero.html">
+    <c-main-hero image="https://static.scania.com/resources/images/demo/default-image.jpg" class="light">
+      <h1>Main Hero</h1>
+      <p>This is the main hero component</p>
+    </c-main-hero>
+
+
+    <section class="light"> 
+      <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Contact/contact-us/contact-us.html">
+      <c-contact-us title="Chat to our sales team" number="0345 450 7735" cta="Let us call you back" link="#">
+        Get in touch and we can help
+      </c-contact-us>
+    </section> 
+
+    <section class="light"> 
+      <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Contact/map-card/map-card.html">
+      <c-map-card>
+        <h5>Vaxholm, Sweden</h5>
+        <h4>23 SEP - 04 OCT 2014</h4>
+        <h4>09:00 - 17:30</h4>
+        <p>Hall 17 (Stand B06), Exhibition Grounds, Deutsche Messe AG, Vaxholm, Sweden, 30521</p>
+        <a role="button" class="btn btn-primary" href="#">Read more</a>
+      </c-map-card>
+    </section> 
+
+   
+    <section class="light">  
+      <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Content%20+%20Teasers/teaser/teaser.html">
+      <c-teaser variation="1" headline="Teaser 1" description="Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.">
+        <c-teaser-item headline="Life at Scania" image="https://static.scania.com/resources/images/demo/truck-tires-mud.png">
+          Scania’s spirit of leadership is built upon shared and inclusive core values. This creates a unique climate where our employees enjoy taking on responsibility – and the chance to develop and realise their potential.
+        </c-teaser-item>
+        <c-teaser-item headline="Tackle Fuel Efficiency" image="https://static.scania.com/resources/images/demo/highway-interchange.png" link="#test" link-text="Learn more">
+          Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.
+        </c-teaser-item>
+      </c-teaser>
+    </section> 
+
+    <section class="light">
+      <link rel="import" href="https://static.scania.com//build/global/2.3.1/html/component/Content%20+%20Teasers/text-and-image/text-and-image.html">
+      <c-text-and-image image="https://static.scania.com/resources/images/demo/text-and-image.jpg" text='"This is the second time a Scania truck with a Euro 6 engine has received the prize."'>"This is the second time a Scania truck with a Euro 6 engine has received the prize."
+      </c-text-and-image>
+    </section>
+
+    <section class="light">
+        <link rel="import" href="https://static.scania.com//build/global/2.3.1/html/component/Content%20+%20Teasers/tiled-display/tiled-display.html">
+        <c-tiled-display 
+         variation="2"
+         img1 = "https://static.scania.com/resources/images/demo/Tile1.jpg" 
+         img2 = "https://static.scania.com/resources/images/demo/Tile2.jpg" 
+         img3 = "https://static.scania.com/resources/images/demo/Tile3.jpg" 
+         img4 = "https://static.scania.com/resources/images/demo/Tile4.jpg"
+         btnText = "Press me" 
+         headline ="Designed Around You" 
+         description = "Take a seat and feel the difference. Notice how everything is in view and within easy reach. Try out the controls and experience the distinct, intuitive feedback in your fingertips." 
+         var2title1="Service Exchange" 
+         var2text1 = "Drivers are at the heart of Scania, and we make every effort to ensure positive working conditions."
+         var2btn1="Browse Catalogue"
+         var2btn2 ="Browse Catalogue">
+        </c-tiled-display>
+    </section>
+
+    <section class="light">
+      <link rel="import" href="https://static.scania.com//build/global/2.3.1/html/component/Contact/contact-us/contact-us.html">
+      <c-contact-us title="Chat to our sales team" number="0345 450 7735" cta="Let us call you back" link="#">
+      Get in touch and we can help
+      </c-contact-us>
+    </section>
+
+    <section class="light">
+      <link rel="import" href="https://static.scania.com//build/global/2.3.1/html/component/Tables%20+%20Forms/login/login.html">
+      <c-login headline="Welcome to Scania" description="To log in to the resource you requested, please select your account type and submit your username and password in the form.">
+       <c-form-field type="text" name="username" label="Username"></c-form-field>
+       <c-form-field type="password" name="password" label="Password"></c-form-field>
+      </c-login>
+    </section>
+
+
+    <section class="light"> 
+      <div class="container">
+        <table class="table table-primary">
+          <thead>
+            <tr>
+              <th colspan="3">Table Primary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DC09 074C</td>
+              <td>5600</td>
+              <td>ICFN1</td>
+            </tr>
+            <tr>
+              <td>DC09 074C</td>
+              <td>5600</td>
+              <td>ICFN1</td>
+            </tr>
+            <tr>
+              <td>Item nr1</td>
+              <td>Item nr2</td>
+              <td>Item nr3</td>                
+            </tr>
+          </tbody>
+        </table>  
+      </div>
+    </section> 
+
+
+
+    <!-- <section class="light"> 
+
+      <link rel="import" href="https://static.scania.com/build/global/2.3.1/html/component/Listing%20Components/article-grid/article-grid.html">
+      <c-article-grid>
+        <c-article-item x="4" y="8" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_17.jpg" title="Wirelessly charged city buses" subtitle="Innovation">
+          <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+        </c-article-item>
+        <c-article-item x="8" y="4" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_18.jpg" title="Take control" subtitle="Sustainability">
+          <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+        </c-article-item>
+        <c-article-item x="4" y="4" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_19.jpg" title="Keeping safe on the road" Subtitle="Innovation">
+          <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+        </c-article-item>
+        <c-article-item x="4" y="4" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_20.jpg" title="In it for the long haul" subtitle="Stories">
+          <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+        </c-article-item>
+      </c-article-grid>
+
+    </section>  -->
+
+
+  </c-main-content>  
+
+  <c-corporate-footer>
+    <c-social-share>
+      <c-social-media name="facebook" link="https://www.facebook.com/search/top/?q=%23scania"></c-social-media>
+      <c-social-media name="twitter" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="linkedin" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="instagram" link="https://www.instagram.com/explore/tags/scania/"></c-social-media>
+      <c-social-media name="vk" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+      <c-social-media name="weibo" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+    </c-social-share>
+
+    <nav-item location="#">privacy policy</nav-item>
+    <nav-item location="#">terms &amp; conditions</nav-item>
+    <nav-item location="#">cookies</nav-item>
+    <nav-item location="#">site map</nav-item>
+    <nav-item location="#">contact us</nav-item>
+    <nav-item location="#">accessibility</nav-item>
+  </c-corporate-footer>
+
+  </body>
+</html>

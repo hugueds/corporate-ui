@@ -1,0 +1,201 @@
+/*
+	Author:			InLine developers
+	Email:			inline.infomate@scania.com
+	Date:			2004-07-03
+	InLine Release:	Last changed in release 3.5.
+
+	Modified by:	Magnus Gutke
+	Email:			maguk@wmdata.com
+	Modified date:	2006-02-21
+	Comment:		Changed site from frames to frameless solution
+	
+	Modified by:	Stefan Väisänen
+	Email: 		stefan.vaisanen@scania.com
+	Modified date:	2006-11-20
+	Comment:		Added class "hspace" (just adding a 20px space)
+*/
+
+/* NOTE! The latest version of this file can be found on the InLine homepage	*/
+/* InLine Support and Guidelines  > Release Information							*/
+
+
+/*
+---------------------------------------------------------------------
+-- General layout settings                                         --
+---------------------------------------------------------------------
+*/
+html { height: 100%; }
+body {
+	display: block; 
+	padding: 0px 0px 0px 0px; 
+	margin: 0px auto; 
+	background: #fff !important;
+	height: 100%;
+	SCROLLBAR-FACE-COLOR: #ccc; 
+	SCROLLBAR-SHADOW-COLOR: #ccc; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #d8d8d8; 
+	SCROLLBAR-3DLIGHT-COLOR: #eee; 
+	SCROLLBAR-DARKSHADOW-COLOR: #aaa;
+	SCROLLBAR-TRACK-COLOR: #eee; 
+	SCROLLBAR-ARROW-COLOR: #000; 
+}
+/* default font layout for all classes without these properties */
+* 
+{
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 100%; 
+	FONT-FAMILY: Verdana, Arial, 'Helvetica 65 Medium'; 
+	/* TEXT-ALIGN: left;  */
+	TEXT-DECORATION: none
+}
+
+B
+{
+	FONT-WEIGHT: bold; 
+}
+
+TABLE 	{  }
+TD 		{ FONT-SIZE: 100%; /* VERTICAL-ALIGN: middle; */ }
+TD A 	{ FONT-SIZE: 69%! important; }
+
+DIV {
+	display: block;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    text-align: left;
+}
+
+UL {
+	DISPLAY: block; 
+	LIST-STYLE-POSITION: outside; 
+	MARGIN: 0px 20px ! important;
+}
+
+OL  {
+	/*list-style: outside; this rule makes numbered list a bullet list*/
+	display:block;
+	margin: 0px 20px ! important;
+}
+
+LI {
+	CLEAR: both; 
+	PADDING-TOP: 3px 0px ! important;
+    /*DISPLAY: block; dont use this attribut because IE8 and Firefox cant show bullet list */
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 83%; 
+	LINE-HEIGHT: 120%; 
+}
+
+FORM 			{ BORDER: 0px; MARGIN: 0px; PADDING: 0px; }
+FORM SELECT 	{ BORDER: 1px solid #000000; MARGIN: 0px; PADDING: 0px; FONT-SIZE: 69%; FLOAT: left; VERTICAL-ALIGN: baseline; BACKGROUND-COLOR: #ffffff; }
+INPUT 			{ BORDER: 1px solid #000000; FONT-SIZE: 69%; FLOAT: left; MARGIN: 0px 3px; VERTICAL-ALIGN: baseline; BACKGROUND-COLOR: #ffffff; }
+INPUT.radio 	{ BORDER: medium none; BACKGROUND-COLOR: transparent; }
+INPUT.button 	{ BORDER: 2px outset buttonface; BACKGROUND-COLOR: buttonface; TEXT-ALIGN: center; }
+INPUT.text 		{ MARGIN-TOP: 1px; }
+INPUT.checkbox 	{ BORDER: 0px; FLOAT: left; MARGIN: -3px 3px; BACKGROUND-COLOR: transparent; }
+TEXTAREA {
+	BORDER: 1px inset #000000; 
+	FONT-SIZE: 69%; 
+	FLOAT: left; 
+	WIDTH: 280px; 
+	HEIGHT: 50px; 
+	BACKGROUND-COLOR: #ffffff;
+}
+TEXTAREA.tipacollegue {
+	BORDER: #000000 1px inset; 
+	WIDTH: 80%; 
+	HEIGHT: 120px; 
+	BACKGROUND-COLOR: #ffffff;
+}
+
+.bold 		{ DISPLAY: inline; FONT-WEIGHT: bold; }
+.left 		{ FLOAT: left; }
+.right 		{ FLOAT: right; }
+.clearleft 	{ CLEAR: left; }
+.clearright 	{ CLEAR: right; }
+.clearboth 	{ CLEAR: both; }
+
+.hspace		{ float:left; width:20px; }
+.block 		{ DISPLAY: block; WIDTH: 100%; }
+.inline 		{ DISPLAY: inline; }
+
+.blockxsmall  { display:block; clear:both; height:  2px; font-size: 0px; margin: 0px; width:100%;}
+.blocksmall  { display:block; clear:both; height:  5px; font-size: 0px; margin: 0px; width:100%;}
+.blockmedium { display:block; clear:both; height: 10px; font-size: 0px; margin: 0px; width:100%;}
+.blockbig    { display:block; clear:both; height: 20px; font-size: 0px; margin: 0px; width:100%;}
+
+/* Text styles*/
+h1 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium';  font-size: 155%; font-weight: bold;  color: #666666; line-height: 120%; display:inline;}
+h2 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium';  font-size: 120%; font-weight: normal; color: #000000; line-height: 120%; display:inline;}
+h3 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium';  font-size: 100%; font-weight: bold;  color: #000000; line-height: 120%; display:inline;}
+h4 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium';  font-size:  83%; font-weight: bold;  color: #666666; line-height: 120%; display:inline;}
+h5 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium';  font-size:  69%; font-weight: bold;  color: #000000; line-height: 120%; display:inline;}
+h6 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium';  font-size:  69%; font-weight: bold;  color: #666666; line-height: 120%; display:inline;}
+/* li {font-size:  100%; font-weight:normal; line-height: 120%; padding: 3px 0px ! important;} */
+
+.headline1   {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium'; font-size: 155%; font-weight: bold; line-height: 120%; color: #666666; clear:left; display:block; padding: 17px 0px 10px 0px;}
+.headline2, a .headline2 , a:link .headline2, a:visited .headline2, a:active .headline2, a:hover  .headline2 {
+FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium'; font-size: 130%; font-weight: normal; line-height: 120%; color: #000000; display:inline; width:70%;  padding: 5px 0px 10px 0px; /*10px 0px 15px 0px;*/ }
+ a .headline2 , a:link .headline2 , a:visited .headline2 , a:active .headline2 , a:hover .headline2  {font-size: 190%; }
+ a:hover .headline2 { text-decoration:underline;}
+.headline3 {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium'; font-size:  95%; font-weight: bold; line-height: 120%; color: #000000; clear:left; display:block; padding: 10px 0px 5px 0px; border-bottom: 2px solid #CCC; }
+.headline4   {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium'; font-size:  83%; font-weight: bold; line-height: 120%; color: #666666; clear:left; display:block; padding: 7px 20px;         border-bottom: 1px solid #CCC; }
+.headline5   {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium'; font-size:  69%; font-weight: bold; line-height: 120%; color: #000000;             display:block; padding: 3px 0px;          border-bottom: 1px solid #CCC; }
+.headline6   {FONT-FAMILY: Arial, Verdana, 'Helvetica 65 Medium'; font-size:  69%; font-weight: bold; line-height: 120%; color: #666666;             display:block; padding: 3px 0px;          border-bottom: 0px solid #CCC; }
+
+a		{ font-size:69%; font-weight:normal; text-decoration:none; }
+A .bold 			{ FONT-WEIGHT: bold; TEXT-DECORATION: none; }
+A:hover 			{ FONT-WEIGHT: normal; TEXT-DECORATION: underline! important; }
+A:hover .bold 	{ FONT-WEIGHT: bold; TEXT-DECORATION: underline! important; }
+/*
+a:active        { font-weight:normal; text-decoration:none ! important; }
+a:active .bold  { font-weight:bold;   text-decoration:none ! important;}
+*/
+a.openpop:link 	{ color:#999999; font-weight:bold; text-decoration:none; }
+
+.normal{ font-size:  83%; font-weight:normal; line-height: 120%; padding: 3px 0px 0px;}
+a .normal , a:link .normal , a:visited .normal , a:active .normal , a:hover .normal { color:black; font-size:  110%; font-weight:normal; line-height: 120%;}
+a:hover .normal { text-decoration:underline;}
+.large       {font-size:  95%; font-weight:normal; line-height: 150%; display:block; padding: 3px 0px ! important;}
+.ingress     {font-size:  83%; font-weight:bold;   line-height: 120%; display:block; padding: 3px 0px 8px ! important;}
+.description {font-size:  69%; font-weight:normal; line-height: 120%; display:block; padding: 3px 0px ! important;}
+.imagetext   {font-size:  69%; font-weight:normal; line-height: 100%; display:block; padding: 3px 0px ! important;}
+.tabletext 			{}
+.sender      {font-size:  69%; color: #848484; text-transform:uppercase; }
+.date 				{ FONT-SIZE: 69%; COLOR: #000; }
+.imgtext     {float: left; margin-right:0px; border: none;}
+
+.normalfloat      {float:left; font-size:  83%; font-weight:normal; line-height: 120%; display:block; padding: 3px 0px ! important;}
+.largefloat       {float:left; font-size:  95%; font-weight:normal; line-height: 150%; display:block; padding: 3px 0px ! important;}
+.ingressfloat     {float:left; font-size:  83%; font-weight:bold;   line-height: 120%; display:block; padding: 3px 0px ! important;}
+.descriptionfloat {float:left; font-size:  69%; font-weight:normal; line-height: 120%; display:block; padding: 3px 0px ! important;}
+.imagetextfloat   {float:left; font-size:  69%; font-weight:normal; line-height: 100%; display:block; padding: 3px 0px ! important;}
+.tabletextfloat 		{ FLOAT: left; }
+.senderfloat      {float:left; font-size:  69%; color: #848484; text-transform:uppercase; }
+.datefloat        {float:left; font-size:  69%; color: #000; }
+
+.line        {clear:both; margin:0px; height:1px; border:0px; color:#CCC; padding:5px 0px;}
+
+.alert		{ border:dashed #F00 2px; padding:10px; color:#F00; float:left; font-size:69%; margin:10px 0px; width:90%;}
+
+/*  Image styles */
+IMG 				{ PADDING-RIGHT: 0px; PADDING-LEFT: 0px; /* FLOAT: left; */ PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none; }
+.floatimgleft 	{ MARGIN-TOP: 0px; FLOAT: left; MARGIN-BOTTOM: 7px; MARGIN-RIGHT: 22px; }
+.floatimgright 	{ MARGIN-TOP: 0px; FLOAT: right; MARGIN-BOTTOM: 7px; MARGIN-LEFT: 22px; }
+.imgblockright 	{ DISPLAY: block; FLOAT: right; MARGIN: 0px 0px 11px 22px; WIDTH: 25%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none; }
+.imgblockright SPAN { CLEAR: left; DISPLAY: block; FONT-SIZE: 69%; MARGIN: 11px 0px 0px; TEXT-ALIGN: left; }
+.imgblockleft 	{ WIDTH: 25%; BORDER-TOP-WIDTH: 0px; DISPLAY: block; BORDER-LEFT-WIDTH: 0px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 22px 11px 0px; BORDER-RIGHT-WIDTH: 0px; }
+.imgblockleft SPAN { CLEAR: left; DISPLAY: block; FONT-SIZE: 69%; MARGIN: 11px 0px 0px; TEXT-ALIGN: left; }
+.imgblock 		{ BORDER-TOP-WIDTH: 0px; DISPLAY: block; BORDER-LEFT-WIDTH: 0px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 0px 11px; WIDTH: 100%; BORDER-RIGHT-WIDTH: 0px; }
+.imgblock SPAN 	{ CLEAR: left; DISPLAY: block; FONT-SIZE: 69%; MARGIN: 11px 0px 0px; TEXT-ALIGN: left; }
+
+DIV.figure 		{ BORDER-RIGHT: silver 0px solid; PADDING-RIGHT: 2em; BORDER-TOP: silver 0px solid; PADDING-LEFT: 2em; FLOAT: left; PADDING-BOTTOM: 2em; MARGIN: 1em; BORDER-LEFT: silver 0px solid; WIDTH: 20%; PADDING-TOP: 2em; BORDER-BOTTOM: silver 0px solid; }
+DIV.figure P 		{ PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: smaller; PADDING-BOTTOM: 10px; TEXT-INDENT: 0px; PADDING-TOP: 10px; FONT-STYLE: italic; TEXT-ALIGN: center; }
+IMG.scaled 		{ WIDTH: 100%; }
+DIV.figure2 P 	{ WIDTH: 100%; }
+DIV.figure2 P + P { caption-side: top; }
+
+/* List number */
+.description .empty20	{ BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; WIDTH: 20px; CURSOR: default; }
+.description .empty40 	{ BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; WIDTH: 40px; CURSOR: default; }

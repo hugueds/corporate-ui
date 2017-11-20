@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UX Proccess</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js?css=custom"></script>
+</head>
+<body class="scania" ng-app="ux-process" style="opacity:0">
+	<div class="container-fluid">
+		<h3>UX Process</h3>
+		<main brand="scania" ng-controller="Main as main">
+			<style>
+				main {
+					display: block;
+					text-align: center;
+					font-size: 10px;
+				}
+				main section:not(.phases),
+				main .phases nav {
+					display: grid;
+					grid-template-columns: repeat({{main.items.length + 1}}, 1fr);
+					grid-gap: 5px;
+				}
+				main .list-group-item {
+					background-color: #eee;
+					word-break: break-word;
+				}
+				main .list-group-item:hover {
+					background-color: #ddd;
+				}
+				main .list-group {
+					margin-bottom: 0;
+				}
+				main .methods nav {
+					align-self: end;
+				}
+				main strong {
+					align-self: center;
+				}
+				main p {
+					white-space: pre-wrap;
+					word-break: break-word;
+					font-size: 10px;
+					padding: 15px;
+					margin-bottom: 0;
+				}
+				main .phases nav {
+					padding: 5px 0;
+				}
+				main .phases .list-group-item {
+					background-color: transparent;
+					border-radius: 4px;
+					font-weight: bold;
+				}
+				main .phases .list-group-item:hover {
+					background-color: #eee;
+				}
+
+				/* Test phase marker */
+				main section nav.test,
+				main section p.test,
+				main nav > .test:after {
+					border-right: 2px dashed #e00;
+				}
+				main section > .test {
+					margin-right: -3px;
+				}
+				main section > nav.test {
+					padding-right: 2px;
+				}
+				main section a.test {
+					margin-right: 1px;
+				}
+				main nav > .test:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: -2px;
+					bottom: -11px;
+					right: -5px;
+				}
+				main section.threshold .test h5 {
+					margin-bottom: 0;
+				}
+				main section.threshold .test {
+					grid-column: {{main.thresholdIndex}} / {{main.thresholdIndex + 2}};
+				}
+
+				/* Scania design */
+				.scania main .list-group-item {
+					border: 0;
+					border-radius: 0;
+					text-transform: uppercase;
+					font-size: 8px;
+				}
+				.scania main nav > .test:after {
+					right: -4px;
+				}
+				.scania main .phases .list-group-item + .list-group-item:before {
+					content: "";
+					display: block;
+					border-top: 2px solid #eee;
+					width: 50px;
+					position: absolute;
+					top: 50%;
+					left: -25px;
+				}
+				.scania main .phases .list-group-item {
+					font-size: 10px;
+					border-radius: 0;
+				}
+			</style>
+
+			<section class="methods">
+				<strong>Methods</strong>
+				<nav class="list-group" ng-repeat="item in main.items" ng-class="item.phase | spaceless">
+					<a class="list-group-item" href ng-repeat="item in item.methods">{{::item}}</a>
+				</nav>
+			</section>
+			<section class="phases">
+				<nav>
+					<strong>Phases</strong>
+					<a class="list-group-item" ng-repeat="item in main.items" ng-class="item.phase | spaceless" href>{{::item.phase}}</a>
+				</nav>
+			</section>
+			<section class="deliverables">
+				<strong>Deliverables</strong>
+				<nav class="list-group" ng-repeat="item in main.items" ng-class="item.phase | spaceless">
+					<a class="list-group-item" href ng-repeat="item in item.deliverables">{{::item}}</a>
+				</nav>
+			</section>
+			<section class="reasons">
+				<strong>Reasons</strong>
+				<p ng-repeat="item in main.items" ng-class="item.phase | spaceless">{{::item.reasons}}</p>
+			</section>
+			<section class="threshold">
+				<div ng-repeat="item in main.items" ng-class="item.phase | spaceless" ng-if="item.threshold" ng-init="main.thresholdIndex = $index + 2">
+					<h5>{{::item.threshold.headline}}</h5>
+					<p>{{::item.threshold.text}}</p>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script>
+		var brand = (document.querySelector('main').attributes.brand || { value: 'scania' }).value;
+
+		angular.module('ux-process', [])
+			.controller('Main', Main)
+			.factory('data', data)
+			.value('brand', brand)
+			.filter('spaceless', spaceless);
+
+		function Main(data) {
+			var vm = this;
+			window.component = vm;
+			vm.items = [];
+
+			data.get()
+				.then(success, fail);
+
+			function success(res) {
+				vm.items = res.data;
+			}
+			function fail(res) {
+				console.log('Error: ', res);
+			}
+		}
+		function data($http, $document, brand) {
+			var serviceurl = '',
+				lang = ($document[0].documentElement.lang || 'en').split('-')[0];
+
+			switch(brand) {
+				case 'scania':
+					serviceurl = 'ux-process.json';
+					//serviceurl = 'https://rawgit.com/corporate-ui/translations/master/' + lang + '/ux-process.json';
+					break;
+				default:
+			}
+			return {
+				get: function() {
+					return $http.get(serviceurl);
+				}
+			}
+		}
+		function spaceless() {
+			return function(string) {
+				string = string.replace(/#/g, '2'); // Temporary remove hash to not get error
+				return string.replace(/\s+/g, '-');
+			}
+		}
+	</script>
+    <script src="https://static.scania.com/resources/brands/js/apply-brand.js"></script>	
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+  <title>Scania UX Library - Sample Site</title>
+
+<!--   <script src="https://static.scania.com/build/global/beta/js/corporate-ui.js"></script> -->
+  <script src="https://static.scania.com/build/global/2.0.1/js/corporate-ui.js"></script>
+
+  <script src="https://static.scania.com/vendors/components/pure-js/js-cookie/2.1.4/js/js.cookie.js"></script>
+<!--   <script src="https://static.scania.com/vendors/components/pure-js/smooth-scroll/0.3.4/js/smoothscroll.js"></script>
+  <script src="js/local-scripts.js"></script> -->
+
+<!--   <link type="text/css" charset="UTF-8" rel="stylesheet" href="css/local-styles.css"> -->
+
+</head>
+
+<body unresolved class="scania">  
+
+  <c-corporate-header site-name="Sample Site" site-url="index.html">
+    <nav-item location="https://scania.com/ux-library/">UX Library</nav-item>
+    <nav-item location="../index.html">Log out</nav-item>
+  </c-corporate-header>
+
+  <c-main-content>
+    <c-main-navigation show-search>
+      <primary-items>
+        <nav-item location="home.html" class="active">Start</nav-item>
+        <nav-item location="navigation.html">Navigation
+          <sub-navigation caption="Fleet position">
+            <nav-item location="#" class="active">Page 1</nav-item>
+          </sub-navigation>
+        </nav-item>            
+        <nav-item location="content-and-teasers.html">Content & Teasers
+          <sub-navigation caption="Content & Teasers">
+           <nav-item location="to-do.html" class="active">Page 1</nav-item>
+         </sub-navigation>
+       </nav-item>  
+       <nav-item location="listing-components.html" class="hidden-md">Listing Componentsl
+        <sub-navigation caption="Content & Teasers">
+          <nav-item location="to-do.html" class="active">Page 1</nav-item>
+        </sub-navigation>
+      </nav-item>
+      <nav-item location="contact.html" class="hidden-xl hidden-xl">Contact
+        <sub-navigation caption="Content & Teasers">
+          <nav-item location="to-do.html" class="active">Page 1</nav-item>
+        </sub-navigation> 
+      </nav-item>   
+      <nav-item location="social.html" class="hidden-xl hidden-xl">Social
+        <sub-navigation caption="Content & Teasers">
+          <nav-item location="to-do.html" class="active">Page 1</nav-item>
+        </sub-navigation>        
+      </nav-item>           
+      <nav-item location="loading.html" class="hidden-xl hidden-xl">Loading
+        <sub-navigation caption="Content & Teasers">
+          <nav-item location="to-do.html" class="active">Page 1</nav-item>
+        </sub-navigation>        
+      </nav-item>             
+  </primary-items>
+  <secondary-items>
+    <!--   Here goes custom HTML Code -->
+  </secondary-items>      
+  </c-main-navigation>
+
+
+    <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Navigation/main-hero/main-hero.html">
+    <c-main-hero image="https://static.scania.com/resources/images/demo/default-image.jpg">
+      <h1>Main Hero</h1>
+      <p>This is the main hero component</p>
+    </c-main-hero>
+
+  
+  <section> 
+
+    <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Contact/contact-us/contact-us.html">
+    <c-contact-us title="Chat to our sales team" number="0345 450 7735" cta="Let us call you back" link="#">
+      Get in touch and we can help
+    </c-contact-us>
+
+  </section> 
+
+
+  
+  <section class="light"> 
+
+  <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Contact/map-card/map-card.html">
+  <c-map-card style="text-align: center">
+    <h5>HANNOVER, GERMANY</h5>
+    <h4>23 SEP - 04 OCT 2014</h4>
+    <h4>09:00 - 17:30</h4>
+    <p>Hall 17 (Stand B06), Exhibition Grounds, Deutsche Messe AG, Hannover, Germany, 30521</p>
+    <a role="button" class="btn btn-primary" href="#">Read more</a>
+  </c-map-card>
+
+  </section> 
+
+ 
+  <section> 
+
+  <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Content%20+%20Teasers/quote/quote.html">
+  <c-quote image="https://static.scania.com/resources/images/demo/c-quote-full.jpg" variation="2">
+    <p>A very inspirational quote indeed</p>
+    <h3>A quoteable person</h3>
+    <h3>Quote company Inc.</h3>
+  </c-quote>
+
+  </section> 
+
+
+  
+  <section> 
+
+  <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Content%20+%20Teasers/teaser/teaser.html">
+  <c-teaser variation="1" headline="Teaser 1" description="Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.">
+    <c-teaser-item headline="Life at Scania" image="https://static.scania.com/resources/images/demo/truck-tires-mud.png">
+      Scania’s spirit of leadership is built upon shared and inclusive core values. This creates a unique climate where our employees enjoy taking on responsibility – and the chance to develop and realise their potential.
+    </c-teaser-item>
+    <c-teaser-item headline="Tackle Fuel Efficiency" image="https://static.scania.com/resources/images/demo/highway-interchange.png" link="#test" link-text="Learn more">
+      Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.
+    </c-teaser-item>
+  </c-teaser>
+
+  </section> 
+
+
+
+  
+  <section class="light"> 
+
+  <div class="container">
+    <table class="table table-primary">
+      <thead>
+        <tr>
+          <th colspan="3">Table Primary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DC09 074C</td>
+          <td>5600</td>
+          <td>ICFN1</td>
+        </tr>
+        <tr>
+          <td>DC09 074C</td>
+          <td>5600</td>
+          <td>ICFN1</td>
+        </tr>
+        <tr>
+          <td>Item nr1</td>
+          <td>Item nr2</td>
+          <td>Item nr3</td>                
+        </tr>
+      </tbody>
+    </table>  
+
+<!--     <table class="table table-warning">
+      <thead>
+        <tr>
+          <th colspan="3">Table Warning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DC09 074C</td>
+          <td>5600</td>
+          <td>ICFN1</td>
+        </tr>
+        <tr>
+          <td>DC09 074C</td>
+          <td>5600</td>
+          <td>ICFN1</td>
+        </tr>
+        <tr>
+          <td>Item nr1</td>
+          <td>Item nr2</td>
+          <td>Item nr3</td>                
+        </tr>
+      </tbody>
+    </table>   -->
+  </div>
+  </section> 
+
+
+
+  <section>
+
+    <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Listing%20Components/article-grid/article-grid.html">
+    <c-article-grid>
+      <c-article-item x="4" y="8" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_17.jpg" title="Wirelessly charged city buses" subtitle="Innovation">
+        <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+      </c-article-item>
+      <c-article-item x="8" y="4" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_18.jpg" title="Take control" subtitle="Sustainability">
+        <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+      </c-article-item>
+      <c-article-item x="4" y="4" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_19.jpg" title="Keeping safe on the road" Subtitle="Innovation">
+        <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+      </c-article-item>
+      <c-article-item x="4" y="4" img="https://static.scania.com/resources/images/demo/C025_Tiled_Display_20.jpg" title="In it for the long haul" subtitle="Stories">
+        <p>Phil Sampson charts Scania`s history over the past 50 years.</p>
+      </c-article-item>
+    </c-article-grid>
+
+  </section> 
+
+ <!--  
+  <section> 
+
+  </section> 
+
+
+
+  
+  <section> 
+
+  </section> 
+
+
+
+  
+  <section> 
+
+  </section> 
+
+
+
+  
+  <section> 
+
+  </section>  -->
+
+
+
+  <section> 
+
+    <link rel="import" href="https://static.scania.com//build/global/2.0.0//html/component/Find%20a%20dealer/find-a-dealer-teaser/find-a-dealer-teaser.html">
+    <c-find-a-dealer-teaser headline="It all starts with a local dealer" cta="find your dealer" link="#" fullbleed>
+      <c-contact-us title="Scania assistance" action="Get assistance now" number="0345 450 7735">
+        Scania Assistance is always there to help you. Any time of the day or night - 365 days.
+      </c-contact-us>
+    </c-find-a-dealer-teaser>  
+
+  </section> 
+
+
+</c-main-content>  
+
+<c-corporate-footer>
+  <c-social-share>
+    <c-social-media name="facebook" link="https://www.facebook.com/search/top/?q=%23scania"></c-social-media>
+    <c-social-media name="twitter" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+    <c-social-media name="linkedin" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+    <c-social-media name="instagram" link="https://www.instagram.com/explore/tags/scania/"></c-social-media>
+    <c-social-media name="vk" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+    <c-social-media name="weibo" link="https://twitter.com/search?q=%23scania&src=typd"></c-social-media>
+  </c-social-share>
+
+  <nav-item location="#">privacy policy</nav-item>
+  <nav-item location="#">terms &amp; conditions</nav-item>
+  <nav-item location="#">cookies</nav-item>
+  <nav-item location="#">site map</nav-item>
+  <nav-item location="#">contact us</nav-item>
+  <nav-item location="#">accessibility</nav-item>
+</c-corporate-footer>
+
+</body>
+</html>

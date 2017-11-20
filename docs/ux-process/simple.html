@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de-GZ">
+<head>
+	<title>UX Proccess</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		html { font-size: inherit 12px; }
+		body { font-size: inherit !important; }
+		li > .list-group-item {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		nav > .list-group-item {
+			background-color: #eee;
+		}
+		.list-group {
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+<body ng-app="ux-proccess" class="scania">
+	<div class="container-fluid phases">
+		<h1>UX Proccess</h1>
+		<main ng-controller="Main as main">
+			<ul class="list-unstyled phases row">
+				<li class="col-xs-2" ng-repeat="item in main.items" ng-class="{{item.phase | spaceless}}">
+					<nav class="list-group" ng-class="methods">
+						<a class="list-group-item" href ng-repeat="item in item.methods">{{item}}</a>
+					</nav>
+					<a class="list-group-item" href>{{item.phase}}</a>
+					<nav class="list-group" ng-class="deliverables">
+						<a class="list-group-item" href ng-repeat="item in item.deliverables">{{item}}</a>
+					</nav>
+					<p>{{item.reasons}}</p>
+				</li>
+			</ul>
+		</main>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script>
+		angular.module('ux-proccess', [])
+			.controller('Main', Main)
+			.filter('spaceless', spaceless);
+
+		function Main($document, $http) {
+			var vm = this
+			vm.items = []
+			vm.lang = $document[0].documentElement.lang.split('-')[0] || 'en'
+
+			//$http.get('https://rawgit.com/corporate-ui/translations/master/de/ux-process.json')
+			$http.get('ux-process.json')
+				.then(success, fail)
+
+			function success(res) {
+				vm.items = res.data;
+			}
+			function fail(res) {
+				console.log('Error: ', res)
+			}
+		}
+		function spaceless() {
+			return function(string) {
+				string = string.replace(/#/g, '2'); // Temporary remove hash to not get error
+				return string.replace(/\s+/g, '-');
+			}
+		}
+	</script>
+</body>
+</html>

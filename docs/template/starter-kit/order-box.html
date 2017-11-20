@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+
+  <!-- Handling for browsers that are JS disabled -->
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+  <title>Scania | Order Box</title>
+
+  <!-- corporate-ui.js includes Bootstrap, handling for old browsers, corporate header, main menu and footer as well as Web Components polyfills, if needed -->
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+</head>
+
+  <!-- In the body you'll applying the brand identity for Scania as well as UX adjustment for either a public web or an internal app. The app appearance are in develpement and might be shakey --> 
+
+<body unresolved class="scania public">
+
+
+  <!-- The header main menu and footer we hope are quite self explainatory :-) --> 
+<!--  <c-corporate-header site-name="order box" site-url="http://www.scania.com">
+    <nav-item location="">Linda Falk</nav-item>
+    <nav-item location="">Log out</nav-item>
+  </c-corporate-header>  -->   
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+    
+  <!-- c-main-content tag should be placed here, it is setting the layout meassures of the page -->     
+  <c-main-content>
+
+
+    <!-- The main content ends right before the footer starts -->     
+  </c-main-content>
+
+    <!-- Complex footer described below, minimalistic footer looks like this: 
+    <c-corporate-footer></c-corporate-footer> -->  
+
+  <c-corporate-footer>
+    <c-social-share>
+      <nav-item location="https://www.facebook.com/search/top/?q=%23scania" icon="facebook"></nav-item>
+      <nav-item location="https://twitter.com/search?q=%23scania&src=typd" icon="twitter"></nav-item>
+      <nav-item location="https://twitter.com/search?q=%23scania&src=typd" icon="linkedin"></nav-item>
+      <nav-item location="https://www.instagram.com/explore/tags/scania/" icon="instagram"></nav-item>
+      <nav-item location="https://twitter.com/search?q=%23scania&src=typd" icon="vk"></nav-item>
+      <nav-item location="https://twitter.com/search?q=%23scania&src=typd" icon="weibo"></nav-item>
+    </c-social-share>
+
+    <nav-item location="https://www.scania.com/global/en/global/misc/legal.html">Legal</nav-item>
+    <nav-item location="https://www.scania.com/global/en/home/misc/PrivacyStatement.html">Privacy Statement</nav-item>
+    <nav-item location="https://www.scania.com/global/en/home/misc/Cookies.html">Cookies</nav-item>
+    <nav-item location="https://www.scania.com/global/en/home/experience-scania/about-us/contact-us.html">Contact Us</nav-item>
+  </c-corporate-footer>
+
+</body>
+</html>

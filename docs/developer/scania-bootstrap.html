@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+
+  <title>UX Library - Developers</title>
+
+  <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script>
+
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+<body unresolved class="scania">
+
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <c-main-content>
+
+    <c-main-navigation show-search>
+          <primary-items>
+          <nav-item location="/pages/Scania/ux-library/">Home</nav-item>
+          <nav-item location="/pages/Scania/ux-library/styleguide/">Style Guide</nav-item>            
+          <nav-item location="/pages/Scania/ux-library/developer/" class="active">Web Applications
+          <sub-navigation caption="Web Applications">
+            <nav-item location="/pages/Scania/ux-library/developer/">Corporate UI</nav-item>
+            <nav-item location="/pages/Scania/ux-library/component/">Available Components</nav-item>
+            <nav-item location="/pages/Scania/ux-library/template/">Templates</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/caching.html">Caching</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/scania-bootstrap.html" class="active">Scania Bootstrap</nav-item>
+            <nav-item location="/pages/Scania/ux-library/developer/support.html">Support</nav-item>
+          </sub-navigation>
+        </nav-item>
+            <nav-item location="/pages/Scania/ux-library/mobile-apps/">Mobile Apps</nav-item>
+        </primary-items>
+    </c-main-navigation>
+
+    <section>
+      <article>
+        <div class="container">
+
+        <h1>Scania Bootstrap</h1>
+        <p>Scania Bootstrap is now a subset of the Corporate UI framework. Scania Bootstrap can still be used "stand alone" to tailor applications with the Corporate UI look and feel, but it will not fully take advantage of the cost cutting maintainance that the use of  <a href="/pages/Scania/ux-library/component/">Web Components</a> offer. You'll simply have to develop and maintain a lot of the HTML and JavaScript code already availble in the components.</p>
+        <p>When it comes to designing your particular functionallity, please grap code snippets from the <a href="/pages/Scania/ux-library/design-patterns/">the Design Patterns site</a>. The library is uppdated on a daily basis so make sure you'll visit it frequently.</p>
+        <p>All things that you'll need for your development, like icons, fonts and CSS and Web Components Polyfills will become available for you once you're loading trhe <a href="https://static.scania.com/development/global/js/corporate-ui.js">corporate-ui.js</a>.</p>
+        <h2>Custom CSS</h2>
+        <p>All the CSS that you'll need should be available using <a href="/pages/Scania/ux-library/developer/scania-bootstrap-css.html">Boostrap Classes</a> and <a href="/pages/Scania/ux-library/developer/scania-bootstrap-components.html">Boostrap Components</a>. From a maintainance perspective it's important that you do avoid creating custom CSS classes. If you have a need that is not covered in Bootstrap, please <a href="/pages/Scania/ux-library/support/">contact us</a> and we'll find a solution for you.</p>
+      </article>
+    </section>
+  </c-main-content>
+
+  <c-corporate-footer></c-corporate-footer>
+
+  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>
+</html>
+

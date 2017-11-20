@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="corporate-ui">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta charset="utf-8">
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+  <title>UX Library - Colours</title>
+<!--   <script src="https://static.scania.com/vendors/frameworks/jquery/1.11.3/jquery-1.11.3.min.js"></script>   
+  <script src="https://static.scania.com/build/global/2.3.1/js/corporate-ui.js"></script> -->
+  <script src="https://static.scania.com/development/global/js/corporate-ui.js"></script>
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+  <style type="text/css">    
+    .scania.bootstrap h1 {text-align: center; margin-top: 40px}    
+    .scania.bootstrap p {text-align: center;margin:20px 15% 40px;}    
+  </style>
+  <link rel="stylesheet" href="/pages/Scania/ux-library/ux-lib.css">
+</head>
+<body unresolved class="scania app">  
+  <c-corporate-header site-name="UX Library" site-url="/pages/Scania/ux-library/">
+    <nav-item location="https://www.scania.com/world/#/">World Entry</nav-item>
+    <nav-item location="https://www.scania.com/group/en/">Scania Group</nav-item>
+  </c-corporate-header>
+
+  <c-main-content>
+
+    <c-main-navigation show-search>
+      <primary-items>
+          <nav-item location="/pages/Scania/ux-library/">Home</nav-item>
+          <nav-item location="../styleguide/" class="active">Style Guide
+          <sub-navigation caption="Style Guide">
+            <nav-item location="/pages/Scania/ux-library/logotype/">Logotype</nav-item>
+            <nav-item location="/pages/Scania/ux-library/icons/">Icons</nav-item>
+            <nav-item location="/pages/Scania/ux-library/colours/">Colours</nav-item>
+            <nav-item location="/pages/Scania/ux-library/typography/">Typography</nav-item>
+            <nav-item location="/pages/Scania/ux-library/data-visualization/" class="active">Photographs</nav-item>            
+          </sub-navigation>
+          </nav-item>            
+          <nav-item location="../developer/">Web Applications</nav-item>
+      </primary-items>
+    </c-main-navigation>
+
+    
+    <section>
+    <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+      <div class="public">
+        <h2>Photographs</h2>
+          <p>Scania’s image style is set to bring us closer to the customers, the vision and the people. The images are dramatised, using natural light with depth of field and high-level realism. This way Scania is ”present” and shows that the customers and every bit of their business are understood. Two perspecitves may be used to illustrate our awareness of the big picture, as well as our exact attention to detail:
+          </p>
+          <p>
+            <strong>A holistic view</strong> and a <strong>A detailed view</strong>
+            </p>
+          <p>More details on how to use images to visualize the Scania identity can be found on page 91 in the <a href="https://teamroom.scania.com/share/proxy/alfresco/slingshot/node/content/workspace/SpacesStore/f198d8a5-60af-4d92-9407-a43bcfe180b0/Scania%20Identity%20Manual_201609.pdf" target="_blank">Identity Manual</a>.          
+      </div> 
+        <div class="col-md-12">
+
+
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Chart on photograph example</h4>
+        <p>Depending on what kind of data visualization tool you're using and what kind of background you want to embed it in, you might need to combine colours from all Scania palettes. </p>
+      </div> 
+      <div class="col-md-12">
+      <div id="container-photo-donut" style="width: 600px; height: 600px; margin: 0 auto"></div>
+
+
+
+
+
+
+
+    <style>
+      #container-photo-donut {
+        background-position: right ;
+        background-image: url(https://www.scania.com/content/scanianoe/global/en/home/experience-scania/merchandise/_jcr_content/par/main_hero_oI3nChPV.transform/Rend_1170X658/image.jpg);
+        padding:40px;}
+
+
+      path.highcharts-point {
+          opacity: 0.8;
+      }
+
+      html body #container-photo-donut g text {
+          fill: white !important;
+          text-transform: uppercase;
+      }
+    </style>
+
+
+
+
+      <script>
+
+
+      $(function () {
+
+      Highcharts.setOptions({
+          colors: ['#ceb888', '#c8c9c7', '#94a596', '#041e42', '#53565a', '#97999b', '#2c5234',
+                '#e35205', '#9ba5b4', '#f1a982', '#ebe3cf'
+            ],
+          chart: {
+              style: {
+                  fontFamily: 'Scania Sans Condensed'
+              }
+          },
+
+          });
+
+          // Create the chart
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container-photo-donut',
+                type: 'pie',
+            },
+              title: {
+                  text: 'Eco Driving 2017',
+                  style: {
+                      color: '#ffffff',
+                      fontFamily: 'Scania Sans Headline Bold',
+                      fontSize: 26,
+                      },
+              },
+              subtitle: {
+                  text: 'These data are totaly fabricated',
+                  style: {
+                      color: '#ffffff',
+                      fontFamily: 'Scania Sans Headline',
+                      fontSize: 14
+                      },
+              },
+            yAxis: {
+                title: {
+                    text: 'customer satisfaction'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+                }
+            },
+            series: [{
+                name: 'Brands',
+                data: [["Merceders",5],["MAN",4],["Scania",8]],
+                
+                      color: '#ffff00',
+                      fontFamily: 'Scania Sans Headline',
+                      fontSize: 40,                
+                size: '100%',
+                innerSize: '70%',
+                showInLegend:true,
+                dataLabels: {
+                    enabled: false
+                }
+            }]
+        });
+    });
+     </script>
+     </div>
+      </div>
+    </div>
+     </div>
+    </article>                      
+  </section>  
+</c-main-content>  
+<c-corporate-footer>  
+</c-corporate-footer>
+      <script src="https://static.scania.com/vendors/components/pure-js/highcharts/5.0.7/code/highcharts.js"></script>
+      <script src="https://static.scania.com/vendors/components/pure-js/highcharts/5.0.7/code/modules/data.js"></script>
+      <script src="https://static.scania.com/vendors/components/pure-js/highcharts/5.0.7/code/modules/drilldown.js"></script>
+      <script src="https://static.scania.com/vendors/components/pure-js/highcharts/5.0.7/code/js/themes/grid-light.js"></script>
+  <script src="/pages/Scania/ux-library/ux-lib.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+
+	<title>Your Template</title>
+
+<!-- 	Using Angular or React, in the index file, you'll need to skip the prealoading when calling Corporate UI with the preload=false parameter -->
+
+	<script src="https://static.scania.com/build/global/2.3.2-pre/js/corporate-ui.js?preload=false"></script>
+	<script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script>
+
+
+<!-- 	Using Angular or React, the components has to be imported AFTER your Angular app is registered -->
+
+<div ng-if="loaded">
+	<link rel="import" href="https://static.scania.com/build/global/2.3.2-pre/html/component/navigation/corporate-header/corporate-header.html">
+	<link rel="import" href="https://static.scania.com/build/global/2.3.2-pre/html/component/navigation/main-navigation/main-navigation.html">
+	<link rel="import" href="https://static.scania.com/build/global/2.3.2-pre/html/component/Content%20+%20Teasers/main-content/main-content.html">
+	<link rel="import" href="https://static.scania.com/build/global/2.3.2-pre/html/component/navigation/corporate-footer/corporate-footer.html">
+</div>	
+
+
+
+
+
+<!-- Set loaded to TRUE inside "construct" or in an init, when you know things are done. -->
+
+
+
+</head>
+
+<body class="scania app">
+
+
+<!-- Use the custom elements where you need them -->
+
+
+	<c-corporate-header site-name="My New Application" site-url="/pages/Scania/ux-library/">
+		<nav-item location="https://www.scania.com">Sample Link</nav-item>
+	</c-corporate-header>
+
+	<c-main-content>
+
+		<c-main-navigation>
+			<primary-items>
+				<nav-item location="https://www.scania.com/ux-library">UX Library</nav-item>
+				<nav-item location="#" class="active">Web Applications
+					<sub-navigation caption="Web Applications">
+						<nav-item location="https://static.scania.com/ux-library/developer/">Developer Info</a>
+						</sub-navigation>
+					</nav-item>
+				</primary-items>
+			</c-main-navigation>
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 public">
+							<h1>Corporate UI for Public Sites</h1>
+							<p>The Public mode mode has a more compact mode than the public setting. This is the default mode for Corporate UI.</p>
+						</div>
+						<div class="col-md-12 app">
+							<h1>Corporate UI for Applications</h1>
+							<p>The App mode has a more compact appearance than the public mode. Just add class="scania app" to the body tag and everyting will be tighter.</p>
+						</div>
+						<div class="col-md-12">
+							<article>
+								<h1>An article is an article</h1>
+								<p>If you contain your content within an <xmp><article></xmp> tag it will get the layout of an regular news article.</p>
+								</div>					
+							</div>  
+						</div>
+					</section>
+				</c-main-content>
+				<c-corporate-footer></c-corporate-footer>
+			</body>
+			</html>
+
